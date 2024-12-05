@@ -1,11 +1,8 @@
-from fpdf import FPDF
+import json
+from reportlab.pdfgen import canvas
 
-pdf = FPDF('P', 'mm', 'Letter')
+pdf = canvas.Canvas("test1.pdf")
 
-pdf.add_page()
+pdf.setTitle("Document Title")
 
-pdf.set_font('helvetica', '', 16)
-
-pdf.cell(40, 10, 'Hello World!')
-
-pdf.output('pdf_1.pdf')
+pdf.save()
