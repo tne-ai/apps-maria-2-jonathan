@@ -1,24 +1,16 @@
 import json
 from reportlab.pdfgen import canvas
+from reportlab.platypus import Paragraph
 
 #take in json file contents
 #https://www.geeksforgeeks.org/json-load-in-python/
-with open('test.json', 'r') as file:
-    json_contents = json.load(file)
+#https://docs.reportlab.com/reportlab/userguide/ch6_paragraphs/
 
-pdf = canvas.Canvas("test2.pdf")
+#take in file 
+with open('test.txt', 'r') as file:
+    txt_contents = file.read()
 
-title = json_contents.get("title", "Untitled")
-body_text = json_contents.get("bodyText", "Empty")
-table_data = json_contents.get("tableData", "Empty")
-chart_data = json_contents.get("chartData", "Empty")
-sub_head = json_contents.get("subhead", "Empty")
-details = json_contents.get("details", "Empty")
-recommendations = json_contents.get("recommendations", "Empty")
-request_and_response = json_contents.get("request_and_response_issues", "Empty")
+#turn it into dictionary
+json_contents = json.loads(txt_contents)
 
-pdf.drawString(100, 750, title)
-
-pdf.drawString(100, 750, body_text)
-
-pdf.save()
+print(json_contents)
