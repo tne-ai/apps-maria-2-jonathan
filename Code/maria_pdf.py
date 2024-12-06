@@ -22,10 +22,6 @@ def pdf_maker(content, file_name):
     styleN = styles['Normal']
     story = []
 
-    #set x and y axis
-    x = 100
-    y = 750
-
     #iterate through each section 
     for section in content["sections"]:
         content_type = section["type"]
@@ -46,7 +42,7 @@ def pdf_maker(content, file_name):
     
     #upload pdf to session
     pdf.build(story)
-    #pdf.save()
+
     #session.upload_object(file_name, pdf)
 
 
@@ -62,5 +58,3 @@ content = json_contents
 
 #call pdf_maker method
 file = pdf_maker(content, file_name)
-
-#print(json_contents)
