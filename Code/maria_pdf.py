@@ -1,7 +1,13 @@
 import json
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Paragraph
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import PageTemplate
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.pagesizes import letter
 #from tne.TNE import TNE
+
+styles = getSampleStyleSheet()
+_SPACER = Spacer(1, 12)
 
 #take in json file contents
 #https://www.geeksforgeeks.org/json-load-in-python/
@@ -12,7 +18,9 @@ from reportlab.platypus import Paragraph
 
 def pdf_maker(content, file_name):
     #create pdf object
-    pdf = canvas.Canvas(file_name)
+    pdf = SimpleDocTemplate(file_name, pagesize=letter)
+    styleN = styles['Normal']
+    story = []
 
     #set x and y axis
     x = 100
@@ -25,7 +33,8 @@ def pdf_maker(content, file_name):
     
         if content_type == "raw text":
             #have text/paragraph added to pdf
-            pdf.drawString(x, y, actual_content)
+            story.append(Paragraph(actual_content, styleN))
+            story.append(_SPACER)
         
         elif content_type == "table":
             #have table added into pdf
@@ -36,9 +45,9 @@ def pdf_maker(content, file_name):
             continue
     
     #upload pdf to session
-    pdf.save()
+    pdf.build(story)
+    #pdf.save()
     #session.upload_object(file_name, pdf)
-    
 
 
 #take in file 
