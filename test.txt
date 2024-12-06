@@ -1,5 +1,5 @@
 {
-    "document_filename": "San_Diego_County_GRP_Analysis_2019_2023.docx",
+    "document_filename": "San_Diego_County_GRP_Analysis_2019_2023.pdf",
     "sections": [
         {
             "content": "The Gross Regional Product (GRP) analysis for San Diego County from 2019 to 2023 reveals a period of substantial economic growth and resilience. In 2019, the GRP was approximately $244.28 billion, and by 2023, it had increased to about $308.71 billion. This growth of approximately $64.43 billion over five years highlights the region's robust economic performance. The annual GRP growth reflects a steady upward trajectory, with a slight increase from 2019 to 2020, indicating resilience despite potential economic challenges. A significant recovery phase is evident from 2020 to 2021, as the GRP rose to $268.87 billion. This positive trend continued through 2022, reaching $296.68 billion, and further into 2023, culminating at $308.71 billion.",
