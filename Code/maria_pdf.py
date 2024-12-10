@@ -60,12 +60,48 @@ def pdf_maker(content, file_name):
             #load in json formatted content into code
             chart_contents = json.loads(actual_content)
 
+            #depending on type of chart listed
             if(chart_contents['type'] == 'line'):
                 print("LINE CHART")
+
+                #get the chart data
+                chart_datasets = chart_contents['data']
+
+                #get chart title
+                chart_title_display = chart_contents['options']['title']['display']
+                chart_title_text = chart_contents['options']['title']['text']
+
+                if(chart_title_display):
+                    plt.title(chart_title_text)
+
+                #get chart legend
+                chart_legend = chart_contents['options']['legend']['display']
+
+                #BUILD GRAPH HERE
+                # get x lables
+                x_axis = chart_datasets['labels']
+
+                # get dataset label
+                dataset_label = chart_datasets['datasets'][0]['label']
+
+                #get dataset
+                dataset = chart_datasets['datasets'][0]['data']
+
+                #build the graph
+                plt.plot(x_axis, dataset)
+                plt.ylabel(dataset_label)
+
+                if(chart_legend):
+                    plt.legend()
+
+                plt.show()
+
+                #get lables
+                #print(chart_data)
             else:
                 print("SOMETHING ELSE")
 
-            print(chart_contents)
+            #print(chart_contents)
             continue
     
     #upload pdf to session
