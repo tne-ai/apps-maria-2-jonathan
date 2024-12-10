@@ -1,13 +1,16 @@
 import json
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 from reportlab.platypus import PageTemplate
 from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
+import matplotlib.pyplot as plt
 #from tne.TNE import TNE
 
 styles = getSampleStyleSheet()
-_SPACER = Spacer(1, 12)
+spacer_blank = Spacer(1, 12)
+spacer_enter = Spacer(1, 6)
 
 #take in json file contents
 #https://www.geeksforgeeks.org/json-load-in-python/
@@ -17,7 +20,7 @@ _SPACER = Spacer(1, 12)
 #session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 
 def pdf_maker(content, file_name):
-    #create pdf object
+    #create pdf object, set bounds and spacer
     pdf = SimpleDocTemplate(file_name, pagesize=letter)
     styleN = styles['Normal']
     story = []
@@ -28,16 +31,41 @@ def pdf_maker(content, file_name):
         actual_content = section["content"]
     
         if content_type == "raw text":
-            #have text/paragraph added to pdf
+            #have text/paragraph added to pdf (story object)
             story.append(Paragraph(actual_content, styleN))
-            story.append(_SPACER)
+            story.append(spacer_blank)
         
         elif content_type == "table":
             #have table added into pdf
-            continue
+            lines = actual_content.strip().split("\n")
+            headers = lines[0].split("|") # Extract headers
+            rows = [line.split("|") for line in lines[1:]]  # Extract row
+            
+            table_content = [headers] + rows
+
+            styleT = TableStyle([
+                ('GRID', (0, 0), (-1, -1), 1, colors.black),
+                ('BOX', (0, 0), (-1, -1), 1, colors.black),
+                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
+                ('FONTNAME', (0, 1), (-1, 0), 'Helvetica-Bold'),
+                ('FONTSIZE', (0, 0), (-1, -1), 10)
+            ])
+            
+            story.append(Table(table_content, style= styleT))
         
         elif content_type == "chart":
             #add chart into pdf
+
+            #load in json formatted content into code
+            chart_contents = json.loads(actual_content)
+
+            if(chart_contents['type'] == 'line'):
+                print("LINE CHART")
+            else:
+                print("SOMETHING ELSE")
+
+            print(chart_contents)
             continue
     
     #upload pdf to session
