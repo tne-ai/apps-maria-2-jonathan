@@ -89,7 +89,7 @@ nodes:
         repo: apps-maria-2
     width: 238
     height: 466
-    selected: true
+    selected: false
     positionAbsolute:
       x: 489.7144801895578
       'y': 295.506091604639
@@ -210,7 +210,237 @@ nodes:
       x: 1115.3315877791772
       'y': 214.73021846168433
     dragging: false
+  - id: Q518Bu7L5EoIvjUglp6q_
+    type: out
+    position:
+      x: 956.9235456608421
+      'y': 1058.0010740526222
+    data:
+      id: Q518Bu7L5EoIvjUglp6q_
+      title: Save File
+      outputName: sec1_json.txt
+    width: 238
+    height: 190
+    selected: false
+    positionAbsolute:
+      x: 956.9235456608421
+      'y': 1058.0010740526222
+    dragging: false
+  - id: bI9MAUqK-s3kP98-uOXCz
+    type: out
+    position:
+      x: 486.92354566084214
+      'y': 842.0010740526222
+    data:
+      id: bI9MAUqK-s3kP98-uOXCz
+      title: Save File
+      outputName: sec1_bullets.txt
+    width: 238
+    height: 190
+    selected: false
+    positionAbsolute:
+      x: 486.92354566084214
+      'y': 842.0010740526222
+    dragging: false
+  - id: MNS7JOuqdlUNzslAXTjpi
+    type: python_code
+    position:
+      x: 1318.8415039589195
+      'y': 548.6577587611765
+    data:
+      id: MNS7JOuqdlUNzslAXTjpi
+      title: New Code
+      module: get_table_and_chart.py
+      outputType: overwrite
+      outputToCanvas: false
+      flowState: &ref_3
+        backend: git
+        repo: apps-maria-2-jonathan
+        content:
+          name: Section_1_pdf
+          path: Experts/Section_1_pdf
+          sha: e69b54f2b9c1d30f9e6987509b6b71ba2149d8f4
+          size: 7065
+          url: >-
+            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pdf?ref=main
+          html_url: >-
+            https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pdf
+          git_url: >-
+            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/e69b54f2b9c1d30f9e6987509b6b71ba2149d8f4
+          download_url: >-
+            https://raw.githubusercontent.com/tne-ai/apps-maria-2-jonathan/main/Experts/Section_1_pdf
+          type: file
+          _links:
+            self: >-
+              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pdf?ref=main
+            git: >-
+              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/e69b54f2b9c1d30f9e6987509b6b71ba2149d8f4
+            html: >-
+              https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pdf
+    width: 238
+    height: 348
+    selected: false
+    positionAbsolute:
+      x: 1318.8415039589195
+      'y': 548.6577587611765
+    dragging: false
+  - id: 123QUbtgFyqiRXv4R-llv
+    type: file
+    position:
+      x: 1466.40259187694
+      'y': -87.14236501982506
+    data:
+      id: 123QUbtgFyqiRXv4R-llv
+      title: Data
+      fileName: sec1_bullets.txt
+      flowState: *ref_3
+    width: 238
+    height: 226
+    selected: false
+    positionAbsolute:
+      x: 1466.40259187694
+      'y': -87.14236501982506
+    dragging: false
+  - id: ihMxfkDQHY9AfpmrNz0A6
+    type: file
+    position:
+      x: 1896.2113982958729
+      'y': -162.40842328673492
+    data:
+      id: ihMxfkDQHY9AfpmrNz0A6
+      title: Data
+      fileName: pdf_formatter_template.txt
+      flowState: *ref_3
+    width: 238
+    height: 250
+    selected: false
+    positionAbsolute:
+      x: 1896.2113982958729
+      'y': -162.40842328673492
+    dragging: false
+  - id: mTg9outhHIYjBU4p6fPmf
+    type: llm
+    position:
+      x: 1744.68893889012
+      'y': 388.2222135080265
+    data:
+      id: mTg9outhHIYjBU4p6fPmf
+      title: New Model
+      input: ''
+      slashgptManifest: pdf_formatter.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState: *ref_3
+    width: 238
+    height: 466
+    selected: false
+    positionAbsolute:
+      x: 1744.68893889012
+      'y': 388.2222135080265
+    dragging: false
+  - id: IGZ01iEzgI3JKFgLZ9Ahr
+    type: out
+    position:
+      x: 1358.4552188362404
+      'y': 1043.8291947276887
+    data:
+      id: IGZ01iEzgI3JKFgLZ9Ahr
+      title: Save File
+      outputName: formatted_pdf.txt
+    width: 238
+    height: 190
+    selected: false
+    positionAbsolute:
+      x: 1358.4552188362404
+      'y': 1043.8291947276887
+    dragging: false
+  - id: c8o5gWqCtqMu8074up0Kf
+    type: python_code
+    position:
+      x: 1744.68893889012
+      'y': 954.6983362537164
+    data:
+      id: c8o5gWqCtqMu8074up0Kf
+      title: New Code
+      module: maria_pdf.py
+      outputType: overwrite
+      outputToCanvas: false
+      flowState: *ref_3
+    width: 238
+    height: 348
+    selected: false
+    positionAbsolute:
+      x: 1744.68893889012
+      'y': 954.6983362537164
+    dragging: false
+  - id: kSmjMuRM4mxlhrQvv-N79
+    type: python_code
+    position:
+      x: 1746.6696246339861
+      'y': 1408.2753715990418
+    data:
+      id: kSmjMuRM4mxlhrQvv-N79
+      title: New Code
+      module: merge_json.py
+      outputType: overwrite
+      outputToCanvas: false
+      flowState: *ref_3
+    width: 238
+    height: 348
+    selected: false
+    positionAbsolute:
+      x: 1746.6696246339861
+      'y': 1408.2753715990418
+    dragging: false
 edges:
+  - source: c8o5gWqCtqMu8074up0Kf
+    sourceHandle: b
+    target: kSmjMuRM4mxlhrQvv-N79
+    targetHandle: t
+    id: s3c9pY
+  - source: mTg9outhHIYjBU4p6fPmf
+    sourceHandle: b
+    target: c8o5gWqCtqMu8074up0Kf
+    targetHandle: t
+    id: xwDw-N
+  - source: mTg9outhHIYjBU4p6fPmf
+    sourceHandle: b
+    target: IGZ01iEzgI3JKFgLZ9Ahr
+    targetHandle: t
+    id: jk1Y8H
+  - source: ihMxfkDQHY9AfpmrNz0A6
+    sourceHandle: b
+    target: mTg9outhHIYjBU4p6fPmf
+    targetHandle: t
+    id: VbI6qm
+  - source: 123QUbtgFyqiRXv4R-llv
+    sourceHandle: b
+    target: mTg9outhHIYjBU4p6fPmf
+    targetHandle: t
+    id: 1IpFdR
+  - source: MNS7JOuqdlUNzslAXTjpi
+    sourceHandle: r
+    target: mTg9outhHIYjBU4p6fPmf
+    targetHandle: t
+    id: lFkafd
+  - source: tvtQHO2Y3n31cHAAH4xWR
+    sourceHandle: r
+    target: MNS7JOuqdlUNzslAXTjpi
+    targetHandle: l
+    id: mQXZ69
+  - source: 6HRLbEep5aYPmBacd7A6H
+    sourceHandle: b
+    target: bI9MAUqK-s3kP98-uOXCz
+    targetHandle: t
+    id: OvNVUS
+  - source: tvtQHO2Y3n31cHAAH4xWR
+    sourceHandle: b
+    target: Q518Bu7L5EoIvjUglp6q_
+    targetHandle: t
+    id: lZjqCZ
   - source: ETIOgBs7QcmdmE9o4Buuy
     sourceHandle: b
     target: tvtQHO2Y3n31cHAAH4xWR
