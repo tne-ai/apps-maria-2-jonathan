@@ -1,6 +1,7 @@
 import json
+from io import BytesIO
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import Paragraph, Image, SimpleDocTemplate, Spacer, Table, TableStyle
 from reportlab.platypus import PageTemplate
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
@@ -94,7 +95,21 @@ def pdf_maker(content, file_name):
                 if(chart_legend):
                     plt.legend()
 
-                plt.show()
+                #plt.show()
+
+                #Save chart to BytesIO buffer
+                chart_stream = BytesIO()
+                plt.savefig(chart_stream, format='png')
+                #plt.close()
+                chart_stream.seek(0)
+
+                img = Image(chart_stream)
+                img.width = 100
+                img.height = 100
+
+                story.append(img)
+                # chart_stream.close()
+
 
                 #get lables
                 #print(chart_data)
