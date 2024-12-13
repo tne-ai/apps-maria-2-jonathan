@@ -249,7 +249,7 @@ nodes:
       'y': 548.6577587611765
     data:
       id: MNS7JOuqdlUNzslAXTjpi
-      title: New Code
+      title: Table + Chart
       module: get_table_and_chart.py
       outputType: overwrite
       outputToCanvas: true
@@ -325,7 +325,7 @@ nodes:
       'y': 388.2222135080265
     data:
       id: mTg9outhHIYjBU4p6fPmf
-      title: New Model
+      title: Format PDF
       input: ''
       slashgptManifest: pdf_formatter.model
       toolJson: ''
@@ -364,7 +364,7 @@ nodes:
       'y': 432.69833625371643
     data:
       id: c8o5gWqCtqMu8074up0Kf
-      title: New Code
+      title: Upload PDF
       module: maria_pdf.py
       outputType: overwrite
       outputToCanvas: false
@@ -383,7 +383,7 @@ nodes:
       'y': 448.27537159904205
     data:
       id: kSmjMuRM4mxlhrQvv-N79
-      title: New Code
+      title: Merge JSON
       module: merge_json.py
       outputType: overwrite
       outputToCanvas: false
