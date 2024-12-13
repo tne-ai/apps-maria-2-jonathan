@@ -55,66 +55,66 @@ def pdf_maker(content, file_name):
             
             story.append(Table(table_content, style= styleT))
         
-        elif content_type == "chart":
-            #add chart into pdf
+        # elif content_type == "chart":
+        #     #add chart into pdf
 
-            #load in json formatted content into code
-            chart_contents = json.loads(actual_content)
+        #     #load in json formatted content into code
+        #     chart_contents = json.loads(actual_content)
 
-            #depending on type of chart listed
-            if(chart_contents['type'] == 'line'):
-                print("LINE CHART")
+        #     #depending on type of chart listed
+        #     if(chart_contents['type'] == 'line'):
+        #         print("LINE CHART")
 
-                #get the chart data
-                chart_datasets = chart_contents['data']
+        #         #get the chart data
+        #         chart_datasets = chart_contents['data']
 
-                #get chart title
-                chart_title_display = chart_contents['options']['title']['display']
-                chart_title_text = chart_contents['options']['title']['text']
+        #         #get chart title
+        #         chart_title_display = chart_contents['options']['title']['display']
+        #         chart_title_text = chart_contents['options']['title']['text']
 
-                if(chart_title_display):
-                    plt.title(chart_title_text)
+        #         if(chart_title_display):
+        #             plt.title(chart_title_text)
 
-                #get chart legend
-                chart_legend = chart_contents['options']['legend']['display']
+        #         #get chart legend
+        #         chart_legend = chart_contents['options']['legend']['display']
 
-                #BUILD GRAPH HERE
-                # get x lables
-                x_axis = chart_datasets['labels']
+        #         #BUILD GRAPH HERE
+        #         # get x lables
+        #         x_axis = chart_datasets['labels']
 
-                # get dataset label
-                dataset_label = chart_datasets['datasets'][0]['label']
+        #         # get dataset label
+        #         dataset_label = chart_datasets['datasets'][0]['label']
 
-                #get dataset
-                dataset = chart_datasets['datasets'][0]['data']
+        #         #get dataset
+        #         dataset = chart_datasets['datasets'][0]['data']
 
-                #build the graph
-                plt.plot(x_axis, dataset)
-                plt.ylabel(dataset_label)
+        #         #build the graph
+        #         plt.plot(x_axis, dataset)
+        #         plt.ylabel(dataset_label)
 
-                if(chart_legend):
-                    plt.legend()
+        #         if(chart_legend):
+        #             plt.legend()
 
-                #plt.show()
+        #         #plt.show()
 
-                #Save chart to BytesIO buffer
-                chart_stream = BytesIO()
-                plt.savefig(chart_stream, format='png')
-                #plt.close()
-                chart_stream.seek(0)
+        #         #Save chart to BytesIO buffer
+        #         chart_stream = BytesIO()
+        #         plt.savefig(chart_stream, format='png')
+        #         #plt.close()
+        #         chart_stream.seek(0)
 
-                img = Image(chart_stream)
-                img.width = 100
-                img.height = 100
+        #         img = Image(chart_stream)
+        #         img.width = 100
+        #         img.height = 100
 
-                story.append(img)
-                # chart_stream.close()
+        #         story.append(img)
+        #         # chart_stream.close()
 
 
-                #get lables
-                #print(chart_data)
-            else:
-                print("SOMETHING ELSE")
+        #         #get lables
+        #         #print(chart_data)
+        else:
+            print("SOMETHING ELSE")
 
             #print(chart_contents)
             continue
