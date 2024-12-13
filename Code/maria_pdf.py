@@ -122,8 +122,8 @@ def pdf_maker(content, file_name):
     #upload pdf to session
     pdf.build(story)
 
-    session.upload_object(file_name, pdf)
-    return pdf
+    session.upload_object(pdf, file_name)
+    return file_name
 
 #take in file 
 #LOCALLY TEST
