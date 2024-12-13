@@ -121,7 +121,7 @@ def pdf_maker(content, file_name):
             continue
             
     pdf.build(story)
-    session.upload_object(pdf_buffer, file_name)
+    session.upload_object(file_name, pdf_buffer)
     return file_name
 
 #take in file 
