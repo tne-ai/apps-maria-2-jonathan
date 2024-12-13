@@ -82,14 +82,14 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: true
+      outputToCanvas: false
       useUserQuery: false
       flowState:
         backend: git
         repo: apps-maria-2
     width: 212
     height: 466
-    selected: false
+    selected: true
     positionAbsolute:
       x: 489.7144801895578
       'y': 295.506091604639
@@ -162,7 +162,7 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: false
+      outputToCanvas: true
       useUserQuery: true
       flowState: &ref_2
         backend: git
@@ -336,7 +336,7 @@ nodes:
       flowState: *ref_3
     width: 212
     height: 466
-    selected: true
+    selected: false
     positionAbsolute:
       x: 1767.8949788965406
       'y': 500.38474020572556
