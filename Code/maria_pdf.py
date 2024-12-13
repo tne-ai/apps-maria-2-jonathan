@@ -118,9 +118,6 @@ def pdf_maker(content, file_name):
 
             #print(chart_contents)
             continue
-    
-    #upload pdf to session
-    pdf.build(story)
 
     session.upload_object(pdf, file_name)
     return file_name
