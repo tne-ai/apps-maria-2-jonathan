@@ -1,40 +1,10 @@
 {
-    "title": "San Diego County GRP Growth 2019-2023",
-    "bodyText": "The Gross Regional Product (GRP) of San Diego County grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. Annual growth was modest in 2020 but surged in subsequent years, with significant contributions from government, manufacturing, and professional services sectors. Per capita GRP rose from $73,347 to $94,916, indicating increased economic productivity per person. The county demonstrated resilience and adaptability, recovering steadily from the COVID-19 pandemic.",
-    "tableData": "| Year | GRP (Billion $) | Per Capita GRP ($) | Government Contribution (Billion $) | Manufacturing Contribution (Billion $) | Professional Services Contribution (Billion $) |\n|------|----------------|--------------------|-------------------------------------|----------------------------------------|-----------------------------------------------|\n| 2019 | 244.28         | 73,347             | 45.19                               | 28.26                                  | 28.13                                         |\n| 2020 | 244.82         | -                  | -                                   | -                                      | -                                             |\n| 2021 | 268.87         | -                  | -                                   | -                                      | -                                             |\n| 2022 | 296.68         | -                  | -                                   | -                                      | -                                             |\n| 2023 | 308.71         | 94,916             | 52.92                               | 31.67                                  | 37.04                                         |",
-    "chartData": {
-        "type": "bar",
-        "data": {
-            "labels": ["2019", "2020", "2021", "2022", "2023"],
-            "datasets": [
-                {
-                    "label": "GRP (Billion $)",
-                    "data": [244.28, 244.82, 268.87, 296.68, 308.71],
-                    "backgroundColor": "rgba(75, 192, 192, 0.2)",
-                    "borderColor": "rgba(75, 192, 192, 1)",
-                    "borderWidth": 1
-                }
-            ]
-        },
-        "options": {
-            "scales": {
-                "y": {
-                    "beginAtZero": true
-                }
-            },
-            "plugins": {
-                "legend": {
-                    "display": false
-                }
-            },
-            "title": {
-                "display": true,
-                "text": "San Diego County GRP Growth 2019-2023"
-            }
-        }
-    },
-    "subhead": "San Diego County's GRP grew from $244.28B in 2019 to $308.71B in 2023, with key contributions from government and manufacturing sectors, and a rise in per capita productivity.",
-    "details": "The analysis is based on GRP data from 2019 to 2023, showing a total increase of $64.43 billion. Key industry contributions were from government, manufacturing, and professional services. The per capita GRP rose from $73,347 in 2019 to $94,916 in 2023. The data reflects economic resilience post-COVID-19, with significant growth from 2021 onwards.",
-    "recommendations": "To sustain growth, focus on diversifying the economy, investing in emerging industries, and enhancing workforce skills to adapt to technological advancements.",
-    "request_and_response_issues": "The data does not provide detailed annual per capita GRP or specific contributions for all years, which could enhance the analysis. Additionally, more granular industry data could offer deeper insights."
+    "title": "San Diego County GRP Growth Analysis 2019-2023",
+    "bodyText": "The Gross Regional Product (GRP) of San Diego County grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. Annual growth was modest in 2020 but surged in subsequent years, with significant contributions from Government, Professional Services, and Manufacturing sectors. Per capita GRP rose from $73,347 to $94,916, surpassing state and national averages.",
+    "tableData": "| Year | GRP (Billion $) | Per Capita GRP ($) |\n|------|----------------|--------------------|\n| 2019 | 244.28         | 73,347             |\n| 2020 | 244.82         | -                  |\n| 2021 | 268.87         | -                  |\n| 2022 | 296.68         | -                  |\n| 2023 | 308.71         | 94,916             |",
+    "chartData": "{\n    \"type\": \"line\",\n    \"data\": {\n        \"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"],\n        \"datasets\": [{\n            \"label\": \"GRP (Billion $)\",\n            \"data\": [244.28, 244.82, 268.87, 296.68, 308.71],\n            \"borderColor\": \"#3e95cd\",\n            \"fill\": false\n        }]\n    },\n    \"options\": {\n        \"title\": {\n            \"display\": true,\n            \"text\": \"San Diego County GRP Growth 2019-2023\"\n        },\n        \"legend\": {\n            \"display\": false\n        }\n    }\n}",
+    "subhead": "San Diego County's GRP grew from $244.28B in 2019 to $308.71B in 2023, with per capita GRP rising to $94,916, surpassing state and national averages.",
+    "details": "The analysis uses GRP data from 2019 to 2023, showing a total increase of $64.43 billion. Per capita GRP calculations are based on population estimates, with 2023 figures exceeding California's average of $93,800 and the national average of $77,366. Key sectors include Government ($52.92B), Professional Services ($37.04B), and Manufacturing ($31.67B) in 2023.",
+    "recommendations": "Consider investing in the Professional, Scientific, and Technical Services sector, which shows strong growth potential. Additionally, policies to support Manufacturing could further enhance economic output.",
+    "request_and_response_issues": "The data does not specify the exact population figures used for per capita GRP calculations, which could affect accuracy. Additionally, sector-specific growth rates are not detailed, limiting deeper analysis."
 }
