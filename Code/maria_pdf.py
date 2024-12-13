@@ -137,4 +137,4 @@ file_name = json_contents["document_filename"]
 content = json_contents
 
 #call pdf_maker method
-file = pdf_maker(content, file_name)
+result = pdf_maker(content, file_name)
