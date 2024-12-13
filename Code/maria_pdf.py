@@ -120,7 +120,7 @@ def pdf_maker(content, file_name):
             #print(chart_contents)
             continue
             
-    pdf.build()
+    pdf.build(story)
     session.upload_object(pdf_buffer, file_name)
     return file_name
 
