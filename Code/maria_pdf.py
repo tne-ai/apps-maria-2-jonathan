@@ -22,7 +22,8 @@ session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 
 def pdf_maker(content, file_name):
     #create pdf object, set bounds and spacer
-    pdf = SimpleDocTemplate(file_name, pagesize=letter)
+    pdf_buffer = BytesIO()
+    pdf = SimpleDocTemplate(pdf_buffer, pagesize=letter)
     styleN = styles['Normal']
     story = []
 
