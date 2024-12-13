@@ -36,24 +36,24 @@ def pdf_maker(content, file_name):
             story.append(Paragraph(actual_content, styleN))
             story.append(spacer_blank)
         
-        # elif content_type == "table":
-        #     #have table added into pdf
-        #     lines = actual_content.strip().split("\n")
-        #     headers = lines[0].split("|") # Extract headers
-        #     rows = [line.split("|") for line in lines[1:]]  # Extract row
+        elif content_type == "table":
+            #have table added into pdf
+            lines = actual_content.strip().split("\n")
+            headers = lines[0].split("|") # Extract headers
+            rows = [line.split("|") for line in lines[1:]]  # Extract row
             
-        #     table_content = [headers] + rows
+            table_content = [headers] + rows
 
-        #     styleT = TableStyle([
-        #         ('GRID', (0, 0), (-1, -1), 1, colors.black),
-        #         ('BOX', (0, 0), (-1, -1), 1, colors.black),
-        #         ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
-        #         ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
-        #         ('FONTNAME', (0, 1), (-1, 0), 'Helvetica-Bold'),
-        #         ('FONTSIZE', (0, 0), (-1, -1), 10)
-        #     ])
+            styleT = TableStyle([
+                ('GRID', (0, 0), (-1, -1), 1, colors.black),
+                ('BOX', (0, 0), (-1, -1), 1, colors.black),
+                ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+                ('FONTNAME', (0, 1), (-1, -1), 'Helvetica'),
+                ('FONTNAME', (0, 1), (-1, 0), 'Helvetica-Bold'),
+                ('FONTSIZE', (0, 0), (-1, -1), 10)
+            ])
             
-        #     story.append(Table(table_content, style= styleT))
+            story.append(Table(table_content, style= styleT))
         
         elif content_type == "chart":
             #add chart into pdf
@@ -122,8 +122,8 @@ def pdf_maker(content, file_name):
     #upload pdf to session
     pdf.build(story)
 
-    #session.upload_object(file_name, pdf)
-
+    session.upload_object(file_name, pdf)
+    return pdf
 
 #take in file 
 #LOCALLY TEST
