@@ -100,6 +100,7 @@ def pdf_maker(content, file_name):
 
                 #Save chart to BytesIO buffer
                 chart_stream = BytesIO()
+                plt.figure(figsize=(8, 6))
                 plt.savefig(chart_stream, format='png')
                 #plt.close()
                 chart_stream.seek(0)
@@ -107,10 +108,6 @@ def pdf_maker(content, file_name):
                 img = Image(chart_stream)
                 img.width = 50
                 img.height = 50
-
-                chart_stream_resize = BytesIO()
-                plt.savefig(chart_stream_resize, format='png')
-                chart_stream_resize.seek(0)
 
                 story.append(img)
                 # chart_stream.close()
