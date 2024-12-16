@@ -11,7 +11,7 @@ nodes:
       flowState: &ref_0
         backend: git
         repo: apps-maria-2
-    width: 212
+    width: 238
     height: 250
     selected: false
     dragging: false
@@ -28,7 +28,7 @@ nodes:
       title: Data
       fileName: sec1-2_San Diego County_per_capita_grp_data.csv
       flowState: *ref_0
-    width: 212
+    width: 238
     height: 274
     selected: false
     positionAbsolute:
@@ -45,7 +45,7 @@ nodes:
       title: Data
       fileName: sec1-3_San Diego_grp_data.csv
       flowState: *ref_0
-    width: 212
+    width: 238
     height: 250
     selected: false
     dragging: false
@@ -62,7 +62,7 @@ nodes:
       title: Data
       fileName: sec1-4_San Diego_per_capita_grp_data.csv
       flowState: *ref_0
-    width: 212
+    width: 238
     height: 274
     selected: false
     positionAbsolute:
@@ -82,14 +82,14 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: false
+      outputToCanvas: true
       useUserQuery: false
       flowState:
         backend: git
         repo: apps-maria-2
-    width: 212
+    width: 238
     height: 466
-    selected: true
+    selected: false
     positionAbsolute:
       x: 489.7144801895578
       'y': 295.506091604639
@@ -125,7 +125,7 @@ nodes:
             git: >-
               https://api.github.com/repos/tne-ai/apps-maria-2/git/blobs/8f37c98d78ab5c8264275bfdded46c937299095f
             html: https://github.com/tne-ai/apps-maria-2/blob/main/Experts/Section_1
-    width: 212
+    width: 238
     height: 250
     selected: false
     positionAbsolute:
@@ -142,7 +142,7 @@ nodes:
       title: Section 1 Prompt TXT
       fileName: Section 1 Gross Regional Product.txt
       flowState: *ref_1
-    width: 212
+    width: 238
     height: 250
     selected: false
     dragging: false
@@ -186,8 +186,8 @@ nodes:
             git: >-
               https://api.github.com/repos/tne-ai/apps-maria-2/git/blobs/274f0319c11df96c3fc3529d9c7385a9f83d0c5d
             html: https://github.com/tne-ai/apps-maria-2/blob/main/Experts/Section_1
-    width: 212
-    height: 490
+    width: 238
+    height: 466
     selected: false
     positionAbsolute:
       x: 955.8754987547886
@@ -203,7 +203,7 @@ nodes:
       title: Data
       fileName: ie_item_template.txt
       flowState: *ref_2
-    width: 212
+    width: 238
     height: 226
     selected: false
     positionAbsolute:
@@ -219,7 +219,7 @@ nodes:
       id: Q518Bu7L5EoIvjUglp6q_
       title: Save File
       outputName: sec1_json.txt
-    width: 212
+    width: 238
     height: 190
     selected: false
     positionAbsolute:
@@ -235,7 +235,7 @@ nodes:
       id: bI9MAUqK-s3kP98-uOXCz
       title: Save File
       outputName: sec1_bullets.txt
-    width: 212
+    width: 238
     height: 190
     selected: false
     positionAbsolute:
@@ -277,8 +277,8 @@ nodes:
               https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/e69b54f2b9c1d30f9e6987509b6b71ba2149d8f4
             html: >-
               https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pdf
-    width: 212
-    height: 372
+    width: 238
+    height: 348
     selected: false
     positionAbsolute:
       x: 1318.8415039589195
@@ -294,7 +294,7 @@ nodes:
       title: Data
       fileName: sec1_bullets.txt
       flowState: *ref_3
-    width: 212
+    width: 238
     height: 226
     selected: false
     positionAbsolute:
@@ -311,7 +311,7 @@ nodes:
       title: Data
       fileName: pdf_formatter_template.txt
       flowState: *ref_3
-    width: 212
+    width: 238
     height: 250
     selected: false
     positionAbsolute:
@@ -334,7 +334,7 @@ nodes:
       outputToCanvas: true
       useUserQuery: false
       flowState: *ref_3
-    width: 212
+    width: 238
     height: 466
     selected: false
     positionAbsolute:
@@ -350,7 +350,7 @@ nodes:
       id: IGZ01iEzgI3JKFgLZ9Ahr
       title: Save File
       outputName: formatted_pdf.txt
-    width: 212
+    width: 238
     height: 190
     selected: false
     positionAbsolute:
@@ -369,7 +369,7 @@ nodes:
       outputType: overwrite
       outputToCanvas: false
       flowState: *ref_3
-    width: 212
+    width: 238
     height: 348
     selected: false
     positionAbsolute:
@@ -388,7 +388,7 @@ nodes:
       outputType: overwrite
       outputToCanvas: false
       flowState: *ref_3
-    width: 212
+    width: 238
     height: 348
     selected: false
     positionAbsolute:
