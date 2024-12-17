@@ -101,7 +101,7 @@ def pdf_maker(content, file_name):
                 #Save chart to BytesIO buffer
                 chart_stream = BytesIO()
                 plt.savefig(chart_stream, format='png')
-                plt.close()
+                # plt.close()
                 
                 chart_stream.seek(0)
 
