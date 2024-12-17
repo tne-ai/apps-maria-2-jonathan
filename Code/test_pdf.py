@@ -7,7 +7,7 @@ from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 import matplotlib.pyplot as plt
-from tne.TNE import TNE
+# from tne.TNE import TNE
 
 styles = getSampleStyleSheet()
 spacer_blank = Spacer(1, 12)
@@ -18,7 +18,7 @@ spacer_enter = Spacer(1, 6)
 #https://docs.reportlab.com/reportlab/userguide/ch6_paragraphs/
 
 # Initialize the TNE object
-session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
+# session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 
 def pdf_maker(content, file_name):
     #create pdf object, set bounds and spacer
@@ -93,8 +93,8 @@ def pdf_maker(content, file_name):
                 plt.plot(x_axis, dataset)
                 plt.ylabel(dataset_label)
 
-                if(chart_legend):
-                    plt.legend()
+                # if(chart_legend):
+                #     plt.legend()
 
                 #plt.show()
 
@@ -115,16 +115,16 @@ def pdf_maker(content, file_name):
             continue
             
     pdf.build(story)
-    session.upload_object(file_name, pdf_buffer)
+    # session.upload_object(file_name, pdf_buffer)
     return file_name
 
 #take in file 
 #LOCALLY TEST
-# with open('test.txt', 'r') as file:
-#     txt_contents = file.read()
+with open('test.txt', 'r') as file:
+    txt_contents = file.read()
 
 #turn it into dictionary
-json_contents = json.loads(PROCESS_INPUT)
+json_contents = json.loads(txt_contents)
 
 file_name = json_contents["document_filename"]
 content = json_contents
