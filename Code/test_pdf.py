@@ -23,7 +23,7 @@ spacer_enter = Spacer(1, 6)
 def pdf_maker(content, file_name):
     #create pdf object, set bounds and spacer
     pdf_buffer = BytesIO()
-    pdf = SimpleDocTemplate(pdf_buffer, pagesize=letter)
+    pdf = SimpleDocTemplate(file_name, pagesize=letter)
     styleN = styles['Normal']
     story = []
 
@@ -105,15 +105,13 @@ def pdf_maker(content, file_name):
                 
                 chart_stream.seek(0)
 
-                img = Image(chart_stream, width = 75, height = 75)
+                img = Image(chart_stream, width = 500, height = 400)
 
                 story.append(img)
         else:
             print("SOMETHING ELSE")
-
             #print(chart_contents)
-            continue
-            
+
     pdf.build(story)
     # session.upload_object(file_name, pdf_buffer)
     return file_name
@@ -130,4 +128,4 @@ file_name = json_contents["document_filename"]
 content = json_contents
 
 #call pdf_maker method
-result = pdf_maker(content, file_name)
+file = pdf_maker(content, file_name)
