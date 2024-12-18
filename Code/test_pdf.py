@@ -105,7 +105,7 @@ def pdf_maker(content, file_name):
                 
                 chart_stream.seek(0)
 
-                img = Image(chart_stream, width = 500, height = 400)
+                img = Image(chart_stream, width = 400, height = 300)
 
                 story.append(img)
         else:
