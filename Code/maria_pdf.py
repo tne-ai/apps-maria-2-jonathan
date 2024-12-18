@@ -23,7 +23,7 @@ session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 def pdf_maker(content, file_name):
     #create pdf object, set bounds and spacer
     pdf_buffer = BytesIO()
-    pdf = SimpleDocTemplate(pdf_buffer, pagesize=letter)
+    pdf = SimpleDocTemplate(file_name, pagesize=letter)
     styleN = styles['Normal']
     story = []
 
@@ -115,7 +115,7 @@ def pdf_maker(content, file_name):
             continue
             
     pdf.build(story)
-    session.upload_object(file_name, pdf_buffer)
+    session.upload_object(file_name, chart_stream)
     return file_name
 
 #take in file 
