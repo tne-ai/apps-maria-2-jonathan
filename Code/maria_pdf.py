@@ -101,7 +101,7 @@ def pdf_maker(content, file_name):
                 #Save chart to BytesIO buffer
                 chart_stream = BytesIO()
                 plt.savefig(chart_stream, format='png')
-                #plt.close()
+                plt.close()
                 
                 chart_stream.seek(0)
 
@@ -115,7 +115,7 @@ def pdf_maker(content, file_name):
             continue
             
     pdf.build(story)
-    session.upload_object(file_name, chart_stream)
+    session.upload_object(file_name, story)
     return file_name
 
 #take in file 
