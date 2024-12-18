@@ -93,8 +93,8 @@ def pdf_maker(content, file_name):
                 plt.plot(x_axis, dataset)
                 plt.ylabel(dataset_label)
 
-                # if(chart_legend):
-                #     plt.legend()
+                if(chart_legend):
+                    plt.legend()
 
                 #plt.show()
 
