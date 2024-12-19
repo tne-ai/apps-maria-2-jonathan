@@ -57,8 +57,8 @@ def pdf_maker(content, file_name):
     
         if content_type == "raw text":
             #have text/paragraph added to pdf (story object)
-            # story.append(Paragraph(actual_content, styleN))
-            # story.append(spacer_blank)
+            story.append(Paragraph(actual_content, styleN))
+            story.append(spacer_blank)
             continue
         
         elif content_type == "table":
