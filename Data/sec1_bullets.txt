@@ -1,12 +1,8 @@
-import matplotlib.pyplot as plt
-
-years = [2019, 2020, 2021, 2022, 2023]
-grp_values = [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86]
-
-plt.figure(figsize=(10, 6))
-plt.bar(years, grp_values, color='skyblue')
-plt.title('Gross Regional Product of San Diego County (2019-2023)')
-plt.xlabel('Year')
-plt.ylabel('GRP in Dollars')
-plt.xticks(years)
-plt.show()
+plaintext
+| Year | GRP (in billions) |
+|------|-------------------|
+| 2019 | 244.28            |
+| 2020 | 244.82            |
+| 2021 | 268.87            |
+| 2022 | 296.68            |
+| 2023 | 308.71            |
