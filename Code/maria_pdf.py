@@ -133,10 +133,30 @@ def pdf_maker(content, file_name):
 
                 story.append(img)
             
-            elif(chart_contents['type'] == 'plot'):
-                #TODO: Add plot graph functionality
-                #TODO: Add option for plot chart to be selected in LLM response via pdf_formatter
-                continue
+            elif(chart_contents['type'] == 'bar'):
+                #get x axis lables
+                x_axis = chart_datasets['labels']
+
+                #get dataset lables (y-axis)
+                dataset_label = chart_datasets['datasets'][0]['label']
+
+                #get the dataset
+                dataset = chart_datasets['datasets'][0]['data']
+
+                #build the bar chart
+                plt.bar(x_axis, dataset)
+                plt.xlabel('Years') #TODO: NEED TO FIX SO X-AXIS LABEL CAN BE SET
+                plt.ylabel(dataset_label)
+
+                #Save chart to BytesIO buffer
+                chart_stream = BytesIO()
+                plt.savefig(chart_stream, format='png')
+                plt.close()
+                                
+                chart_stream.seek(0)
+                img = Image(chart_stream, width = 400, height = 300)
+
+                story.append(img)
         else:
             print("SOMETHING ELSE")
             continue

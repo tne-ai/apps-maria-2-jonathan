@@ -115,22 +115,42 @@ def pdf_maker(content, file_name):
 
                 if(chart_legend):
                     plt.legend()
+                
+                #Save chart to BytesIO buffer
+                chart_stream = BytesIO()
+                plt.savefig(chart_stream, format='png')
+                plt.close()
+                                
+                chart_stream.seek(0)
+                img = Image(chart_stream, width = 400, height = 300)
 
-                #plt.show()
+                story.append(img)
+            
+            elif(chart_contents['type'] == 'bar'):
+                #get x axis lables
+                x_axis = chart_datasets['labels']
+
+                #get dataset lables (y-axis)
+                dataset_label = chart_datasets['datasets'][0]['label']
+
+                #get the dataset
+                dataset = chart_datasets['datasets'][0]['data']
+
+                #build the bar chart
+                plt.bar(x_axis, dataset)
+                plt.xlabel('Years') #TODO: NEED TO FIX SO X-AXIS LABEL CAN BE SET
+                plt.ylabel(dataset_label)
 
                 #Save chart to BytesIO buffer
                 chart_stream = BytesIO()
                 plt.savefig(chart_stream, format='png')
                 plt.close()
-                
+                                
                 chart_stream.seek(0)
-
                 img = Image(chart_stream, width = 400, height = 300)
 
                 story.append(img)
-            
-            elif(chart_contents['type'] == 'plot'):
-                continue
+
         else:
             print("SOMETHING ELSE")
             #print(chart_contents)
