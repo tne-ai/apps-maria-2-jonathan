@@ -1,10 +1,30 @@
 {
-    "title": "San Diego County GRP from 2019 to 2023",
-    "bodyText": "The Gross Regional Product (GRP) of San Diego County has shown a consistent increase from 2019 to 2023. Starting at approximately $244.28 billion in 2019, it rose to about $308.71 billion by 2023, indicating economic growth over these years.",
-    "tableData": "| Year | GRP in Dollars |\n|------|----------------|\n| 2019 | 244278846457.50 |\n| 2020 | 244822303264.04 |\n| 2021 | 268873550391.04 |\n| 2022 | 296683894891.99 |\n| 2023 | 308710843090.86 |",
-    "chartData": "{\"type\": \"bar\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"data\": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86], \"backgroundColor\": \"skyblue\"}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"Gross Regional Product of San Diego County (2019-2023)\"}, \"legend\": {\"display\": false}}}",
-    "subhead": "San Diego County's GRP increased from $244.28 billion in 2019 to $308.71 billion in 2023, reflecting economic growth.",
-    "details": "The data represents the Gross Regional Product (GRP) of San Diego County from 2019 to 2023. The values are in dollars and show a year-on-year increase. The GRP for each year is as follows: 2019 - $244.28 billion, 2020 - $244.82 billion, 2021 - $268.87 billion, 2022 - $296.68 billion, and 2023 - $308.71 billion.",
-    "recommendations": "Consider analyzing the factors contributing to the economic growth in San Diego County to sustain and enhance this trend.",
-    "request_and_response_issues": "The data provided is clear and sufficient for analyzing the GRP trend over the specified years. No issues were identified."
+    "title": "GRP Growth from 2019 to 2023",
+    "bodyText": "The table presents the Gross Regional Product (GRP) in billions from 2019 to 2023, showing a consistent increase each year. Starting at 244.28 billion in 2019, the GRP rose to 308.71 billion by 2023, indicating economic growth over the five-year period.",
+    "tableData": "| Year | GRP (in billions) |\n|------|-------------------|\n| 2019 | 244.28            |\n| 2020 | 244.82            |\n| 2021 | 268.87            |\n| 2022 | 296.68            |\n| 2023 | 308.71            |",
+    "chartData": {
+        "type": "line",
+        "data": {
+            "labels": ["2019", "2020", "2021", "2022", "2023"],
+            "datasets": [{
+                "label": "GRP",
+                "data": [244.28, 244.82, 268.87, 296.68, 308.71],
+                "borderColor": "blue",
+                "fill": false
+            }]
+        },
+        "options": {
+            "title": {
+                "display": true,
+                "text": "GRP Growth (2019-2023)"
+            },
+            "legend": {
+                "display": false
+            }
+        }
+    },
+    "subhead": "The GRP increased from 244.28 billion in 2019 to 308.71 billion in 2023, showing steady economic growth.",
+    "details": "The data shows the Gross Regional Product (GRP) from 2019 to 2023. The GRP values are 244.28 billion in 2019, 244.82 billion in 2020, 268.87 billion in 2021, 296.68 billion in 2022, and 308.71 billion in 2023. The increase in GRP over these years indicates economic growth. The data is presented in billions and is sourced from the provided table.",
+    "recommendations": "Consider analyzing the factors contributing to the GRP growth to sustain or enhance economic development. Further investigation into sector-specific contributions could provide insights for targeted economic policies.",
+    "request_and_response_issues": "The data provided is limited to GRP values without additional context or sector-specific breakdowns, which could offer more detailed insights into the economic growth drivers."
 }
