@@ -2,16 +2,16 @@
     "document_filename": "San_Diego_County_GRP_Analysis_2019_2023.pdf",
     "sections": [
         {
-            "content": "The Gross Regional Product (GRP) of San Diego County has shown a remarkable trajectory from 2019 to 2023. In 2019, the total GRP was $244.28 billion, with a population of 3,330,458, resulting in a GRP per capita of $73,346.92. The following year, despite the challenges posed by the COVID-19 pandemic, the GRP slightly increased to $244.82 billion. This resilience is further highlighted by the rise in GRP per capita to $74,277.60, even as the population decreased to 3,296,045. By 2021, the county experienced a significant economic recovery, with the GRP climbing to $268.87 billion and the GRP per capita reaching $82,099.95. This growth reflects an improved economic productivity and output per person. The upward trend continued in 2022, with the GRP reaching $296.68 billion and the GRP per capita increasing to $90,557.10, indicating strong economic performance and an increase in the economic value generated per resident. In 2023, the GRP peaked at $308.71 billion, with a GRP per capita of $94,915.87, suggesting sustained economic growth and efficiency in San Diego County's economy. Over this five-year period, the GRP grew by approximately 26.4%, and the GRP per capita rose significantly, underscoring a resilient and expanding economy in the region.",
+            "content": "The Gross Regional Product (GRP) serves as a vital economic indicator, reflecting the economic output of a region. In this analysis, we delve into the GRP of San Diego County from 2019 to 2023, examining both the total GRP and the per capita GRP. This exploration offers insights into the region's economic growth and productivity over the specified period. The total GRP of San Diego County has demonstrated a consistent upward trajectory from 2019 to 2023. In 2019, the GRP was approximately $244.3 billion, and it remained relatively stable into 2020, with a slight increase of about $543 million. However, a significant surge occurred between 2020 and 2021, with the GRP rising by approximately $24 billion, signaling a robust economic recovery post-pandemic. This growth continued from 2021 to 2022, with an increase of around $28 billion, and from 2022 to 2023, the GRP further increased by approximately $12 billion, reflecting sustained economic growth.",
             "type": "raw text"
         },
         {
-            "content": "{\"type\": \"line\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"label\": \"Total GRP\", \"data\": [244.28, 244.82, 268.87, 296.68, 308.71], \"borderColor\": \"blue\", \"fill\": false}, {\"label\": \"GRP per Capita\", \"data\": [73346.92, 74277.6, 82099.95, 90557.1, 94915.87], \"borderColor\": \"green\", \"fill\": false}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"San Diego County GRP and GRP per Capita (2019-2023)\"}, \"legend\": {\"display\": true}}}",
-            "type": "chart"
+            "content": "| Year | Total GRP (in dollars) |\n2019 | $244,278,846,457.50 |\n2020 | $244,822,303,264.04 |\n2021 | $268,873,550,391.04 |\n2022 | $296,683,894,891.99 |\n2023 | $308,710,843,090.86 |",
+            "type": "table"
         },
         {
-            "content": "Year | Total GRP (billion) | Population | GRP per Capita\n2019 | 244.28 | 3,330,458 | 73,346.92\n2020 | 244.82 | 3,296,045 | 74,277.60\n2021 | 268.87 | 3,274,954 | 82,099.95\n2022 | 296.68 | 3,276,208 | 90,557.10\n2023 | 308.71 | 3,252,468 | 94,915.87",
-            "type": "table"
+            "content": "{\"type\": \"line\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"label\": \"Total GRP\", \"data\": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86], \"borderColor\": \"#3e95cd\", \"fill\": false}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"Total GRP of San Diego County (2019-2023)\"}, \"legend\": {\"display\": true}}}",
+            "type": "chart"
         }
     ]
 }
