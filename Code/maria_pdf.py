@@ -39,6 +39,7 @@ def pdf_maker(content, file_name):
     )
     story = []
 
+    #TODO: delete when .model and .pdfformatter has been outfitted with optional cover page option
     story.append(Spacer(1, 100))
     story.append(Paragraph(file_name, styleT))
     story.append(Spacer(1, 100))
@@ -82,8 +83,6 @@ def pdf_maker(content, file_name):
             story.append(Table(table_content, style= styleT))
         
         elif content_type == "chart":
-            #add chart into pdf
-
             #load in json formatted content into code
             chart_contents = json.loads(actual_content)
 
@@ -135,11 +134,11 @@ def pdf_maker(content, file_name):
                 story.append(img)
             
             elif(chart_contents['type'] == 'plot'):
+                #TODO: Add plot graph functionality
+                #TODO: Add option for plot chart to be selected in LLM response via pdf_formatter
                 continue
         else:
             print("SOMETHING ELSE")
-
-            #print(chart_contents)
             continue
             
     pdf.build(story)
@@ -147,12 +146,7 @@ def pdf_maker(content, file_name):
     session.upload_object(file_name, pdf_buffer)
     return file_name
 
-#take in file 
-#LOCALLY TEST
-# with open('test.txt', 'r') as file:
-#     txt_contents = file.read()
-
-#turn it into dictionary
+#turn file into dictionary
 json_contents = json.loads(PROCESS_INPUT)
 
 file_name = json_contents["document_filename"]
