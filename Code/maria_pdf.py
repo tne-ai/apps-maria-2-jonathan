@@ -23,6 +23,7 @@ session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 def pdf_maker(content, file_name):
     #create pdf object, set bounds
     pdf_buffer = BytesIO()
+
     #contains pdf_buffer or file_name
     pdf = SimpleDocTemplate(pdf_buffer, pagesize=letter)
     styleN = styles['Normal']
@@ -132,6 +133,9 @@ def pdf_maker(content, file_name):
                 img = Image(chart_stream, width = 400, height = 300)
 
                 story.append(img)
+            
+            elif(chart_contents['type'] == 'plot'):
+                continue
         else:
             print("SOMETHING ELSE")
 

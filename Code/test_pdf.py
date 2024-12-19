@@ -128,9 +128,13 @@ def pdf_maker(content, file_name):
                 img = Image(chart_stream, width = 400, height = 300)
 
                 story.append(img)
+            
+            elif(chart_contents['type'] == 'plot'):
+                continue
         else:
             print("SOMETHING ELSE")
             #print(chart_contents)
+            continue
 
     pdf.build(story)
     # session.upload_object(file_name, pdf_buffer)
