@@ -49,7 +49,7 @@ def pdf_maker(content, file_name):
         #TODO: Uncomment when .model and .pdfformatter has been outfitted with optional cover page option
         # if content_type == "cover page":
         #     story.append(Spacer(1, 100))
-        #     story.append(Paragraph(file_name, styleT))
+        #     story.append(Paragraph(document_name, styleT))
         #     story.append(Spacer(1, 100))
         #     story.append(PageBreak())
     
