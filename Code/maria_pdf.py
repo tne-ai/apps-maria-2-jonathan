@@ -1,9 +1,9 @@
 import json
 from io import BytesIO
 from reportlab.pdfgen import canvas
-from reportlab.platypus import Paragraph, Image, SimpleDocTemplate, Spacer, Table, TableStyle
+from reportlab.platypus import Paragraph, Image, SimpleDocTemplate, Spacer, Table, TableStyle, PageBreak
 from reportlab.platypus import PageTemplate
-from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 import matplotlib.pyplot as plt
@@ -24,12 +24,34 @@ def pdf_maker(content, file_name):
     #create pdf object, set bounds
     pdf = SimpleDocTemplate(file_name, pagesize=letter)
     styleN = styles['Normal']
+
+    #Create Cover Page
+    styleT = ParagraphStyle(
+        'Title',
+        fontSize=24,
+        fontName='Helvetica-Bold',
+        alignment=1,
+        spaceAfter=20,
+        leading=28
+    )
     story = []
+
+    story.append(Spacer(1, 100))
+    story.append(Paragraph(file_name, styleT))
+    story.append(Spacer(1, 100))
+    story.append(PageBreak())
 
     #iterate through each section 
     for section in content["sections"]:
         content_type = section["type"]
         actual_content = section["content"]
+
+        #TODO: Uncomment when .model and .pdfformatter has been outfitted with optional cover page option
+        # if content_type == "cover page":
+        #     story.append(Spacer(1, 100))
+        #     story.append(Paragraph(file_name, styleT))
+        #     story.append(Spacer(1, 100))
+        #     story.append(PageBreak())
     
         if content_type == "raw text":
             #have text/paragraph added to pdf (story object)
