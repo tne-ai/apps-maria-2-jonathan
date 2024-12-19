@@ -1,16 +1,16 @@
 {
-    "document_filename": "san_diego_grp_report.pdf",
+    "document_filename": "grp_growth_report_2019_2023.pdf",
     "sections": [
         {
-            "content": "The economic landscape of San Diego County has shown a remarkable trajectory over the past few years, as evidenced by the Gross Regional Product (GRP) data from 2019 to 2023. This period has been marked by consistent growth, reflecting the region's resilience and economic vitality. In 2019, the GRP stood at approximately $244.28 billion, and despite the global challenges faced in 2020, the GRP slightly increased to about $244.82 billion. The subsequent years saw a more pronounced upward trend, with the GRP reaching $268.87 billion in 2021, $296.68 billion in 2022, and an impressive $308.71 billion in 2023. This growth underscores the dynamic economic environment of San Diego County, driven by diverse industries and a robust workforce.",
+            "content": "The Gross Regional Product (GRP) has shown a consistent upward trend from 2019 to 2023. In 2019, the GRP was recorded at 244.28 billion, and it experienced a slight increase to 244.82 billion in 2020. This period marked the beginning of a more significant growth phase, as the GRP rose to 268.87 billion in 2021. The upward trajectory continued with the GRP reaching 296.68 billion in 2022, and further climbing to 308.71 billion in 2023. This steady growth over the five-year period highlights the region's economic resilience and potential for future expansion.",
             "type": "raw text"
         },
         {
-            "content": "{\"type\": \"bar\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"data\": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86], \"backgroundColor\": \"skyblue\"}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"Gross Regional Product of San Diego County (2019-2023)\"}, \"legend\": {\"display\": true}}}",
+            "content": "{\"type\": \"line\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"label\": \"GRP\", \"data\": [244.28, 244.82, 268.87, 296.68, 308.71], \"borderColor\": \"blue\", \"fill\": false}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"GRP Growth (2019-2023)\"}, \"legend\": {\"display\": true}}}",
             "type": "chart"
         },
         {
-            "content": "Year | GRP in Dollars\n2019 | 244278846457.50\n2020 | 244822303264.04\n2021 | 268873550391.04\n2022 | 296683894891.99\n2023 | 308710843090.86",
+            "content": "| Year | GRP (in billions) |\n| 2019 | 244.28 |\n| 2020 | 244.82 |\n| 2021 | 268.87 |\n| 2022 | 296.68 |\n| 2023 | 308.71 |",
             "type": "table"
         }
     ]
