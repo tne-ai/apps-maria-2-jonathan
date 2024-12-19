@@ -1,7 +1,7 @@
 {
     "title": "San Diego County GRP Analysis 2019-2023",
-    "bodyText": "The Gross Regional Product (GRP) of San Diego County grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. Annual growth was modest in 2020 but surged in subsequent years, with per capita GRP rising from $73,347 to $94,916. San Diego's per capita GRP in 2023 surpassed both state and national averages. Key sectors contributing to this growth include Government, Professional Services, and Manufacturing.",
-    "tableData": "| Year | Total GRP (Billion $) | Per Capita GRP ($) |\n|------|----------------------|-------------------|\n| 2019 | 244.28               | 73,347            |\n| 2020 | 244.82               | -                 |\n| 2021 | 268.87               | -                 |\n| 2022 | 296.68               | -                 |\n| 2023 | 308.71               | 94,916            |",
+    "bodyText": "The Gross Regional Product (GRP) of San Diego County showed a steady increase from 2019 to 2023. Starting at $244.28 billion in 2019, it rose to $308.71 billion by 2023, marking a 26.4% growth. The per capita GRP also increased from $73,346.92 to $94,915.87, reflecting economic prosperity. Key sectors contributing to this growth include healthcare, government, professional services, and manufacturing. Despite the COVID-19 pandemic, the region demonstrated resilience with a slight GRP increase in 2020 and significant growth in subsequent years.",
+    "tableData": "Year | Total GRP (billion) | Per Capita GRP\n2019 | 244.28 | 73,346.92\n2020 | 244.82 | 74,277.60\n2021 | 268.87 | 82,099.95\n2022 | 296.68 | 90,557.10\n2023 | 308.71 | 94,915.87",
     "chartData": {
         "type": "line",
         "data": {
@@ -12,21 +12,27 @@
                     "data": [244.28, 244.82, 268.87, 296.68, 308.71],
                     "borderColor": "blue",
                     "fill": false
+                },
+                {
+                    "label": "Per Capita GRP",
+                    "data": [73346.92, 74277.60, 82099.95, 90557.10, 94915.87],
+                    "borderColor": "green",
+                    "fill": false
                 }
             ]
         },
         "options": {
             "title": {
                 "display": true,
-                "text": "San Diego County GRP (2019-2023)"
+                "text": "San Diego County GRP and Per Capita GRP (2019-2023)"
             },
             "legend": {
                 "display": false
             }
         }
     },
-    "subhead": "San Diego County's GRP grew from $244.28B in 2019 to $308.71B in 2023, with per capita GRP rising to $94,916, surpassing state and national averages.",
-    "details": "The analysis uses GRP data from 2019 to 2023, showing a total increase of $64.43 billion. Per capita GRP calculations are based on total GRP divided by population estimates. Sectoral contributions highlight Government, Professional Services, and Manufacturing as key contributors. The comparison with state and national levels uses 2023 per capita GRP figures: San Diego ($94,916), California ($93,800), and national ($77,366).",
-    "recommendations": "Consider investing in key sectors like Government, Professional Services, and Manufacturing to sustain economic growth. Monitor economic indicators to maintain competitive advantage over state and national averages.",
-    "request_and_response_issues": "The data does not specify the exact population figures used for per capita GRP calculations, which could affect accuracy. Sectoral contributions are only provided for 2023, lacking a year-by-year breakdown."
+    "subhead": "San Diego County's GRP grew from $244.28 billion in 2019 to $308.71 billion in 2023, with per capita GRP rising from $73,346.92 to $94,915.87, driven by key sectors like healthcare and manufacturing.",
+    "details": "The analysis uses data from 2019 to 2023, showing a GRP increase from $244.28 billion to $308.71 billion. The per capita GRP rose from $73,346.92 to $94,915.87. Growth rates were calculated as follows: 2020 (0.22%), 2021 (9.8%), 2022 (10.3%), and 2023 (4.1%). The total growth over the period was 26.4%. Key sectors include healthcare, government, professional services, and manufacturing.",
+    "recommendations": "To sustain economic growth, San Diego County should continue to support its key sectors, invest in innovation, and enhance workforce development to adapt to changing economic conditions.",
+    "request_and_response_issues": "The request was clear, and the data provided was sufficient for a comprehensive analysis. No significant issues were identified in the data or request."
 }
