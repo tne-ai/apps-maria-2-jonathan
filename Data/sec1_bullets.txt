@@ -14,15 +14,15 @@ The Gross Regional Product (GRP) analysis for San Diego County between 2019 and 
 3. **Per Capita GRP**:
    - In 2019, the per capita GRP was approximately $73,347.
    - By 2023, the per capita GRP increased to approximately $94,916.
-   - This indicates a growth in economic productivity per person in the region.
+   - This indicates a substantial increase in economic productivity per person over the period.
 
 4. **Comparison with State and National Levels**:
    - San Diego County's per capita GRP in 2023 ($94,916) was higher than the state average of California ($93,800) and significantly higher than the national average ($77,366).
-   - This suggests that San Diego County has a relatively strong economic performance compared to both the state and national levels.
+   - This suggests that San Diego County has a relatively high level of economic productivity compared to both the state and national averages.
 
-5. **Sectoral Contributions**:
+5. **Sector Contributions**:
    - Key sectors contributing to the GRP include Government, Manufacturing, and Professional, Scientific, and Technical Services.
-   - The Government sector consistently contributed the highest to the GRP, with $52.92 billion in 2023.
+   - The Government sector consistently contributed the largest share to the GRP, with $52.92 billion in 2023.
    - Manufacturing and Professional, Scientific, and Technical Services also showed strong contributions, with $31.67 billion and $37.04 billion respectively in 2023.
 
-Overall, San Diego County demonstrated robust economic growth from 2019 to 2023, with significant increases in both total and per capita GRP, outperforming state and national averages. The region's diverse economic base, including strong contributions from government, manufacturing, and professional services, has supported this growth trajectory.
+Overall, San Diego County demonstrated robust economic growth from 2019 to 2023, with significant increases in both total GRP and per capita GRP, outperforming state and national averages. The county's economy is supported by diverse sectors, with Government, Manufacturing, and Professional Services playing pivotal roles.
