@@ -1,19 +1,17 @@
 {
-    "title": "San Diego County GRP Growth Analysis 2019-2023",
-    "bodyText": "The Gross Regional Product (GRP) of San Diego County grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. Annual growth showed resilience during the pandemic, with significant recovery in 2021. Per capita GRP rose from $73,347 in 2019 to $94,916 in 2023, surpassing state and national averages. Key sectors contributing to this growth include Government, Manufacturing, and Professional Services.",
-    "tableData": "Year | GRP (Billion $) | Per Capita GRP ($)\n2019 | 244.28 | 73,347\n2020 | 244.82 | N/A\n2021 | 268.87 | N/A\n2022 | 296.68 | N/A\n2023 | 308.71 | 94,916",
+    "title": "San Diego County GRP Analysis 2019-2023",
+    "bodyText": "The Gross Regional Product (GRP) of San Diego County grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. Annual growth was modest in 2020 but accelerated in subsequent years. The GRP per capita rose from $73,347 in 2019 to $94,916 in 2023, surpassing both state and national averages. Key sectors contributing to this growth include Government, Professional, Scientific, and Technical Services, and Manufacturing.",
+    "tableData": "| Year | GRP (Billion $) | GRP per Capita ($) |\n|------|----------------|--------------------|\n| 2019 | 244.28         | 73,347             |\n| 2020 | 244.82         | -                  |\n| 2021 | 268.87         | -                  |\n| 2022 | 296.68         | -                  |\n| 2023 | 308.71         | 94,916             |",
     "chartData": {
         "type": "line",
         "data": {
             "labels": ["2019", "2020", "2021", "2022", "2023"],
-            "datasets": [
-                {
-                    "label": "GRP (Billion $)",
-                    "data": [244.28, 244.82, 268.87, 296.68, 308.71],
-                    "borderColor": "blue",
-                    "fill": false
-                }
-            ]
+            "datasets": [{
+                "label": "GRP (Billion $)",
+                "data": [244.28, 244.82, 268.87, 296.68, 308.71],
+                "borderColor": "blue",
+                "fill": false
+            }]
         },
         "options": {
             "title": {
@@ -26,7 +24,7 @@
         }
     },
     "subhead": "San Diego County's GRP grew from $244.28B in 2019 to $308.71B in 2023, with per capita GRP rising to $94,916, surpassing state and national averages.",
-    "details": "The analysis uses GRP data from 2019 to 2023, showing a total increase of $64.43 billion. Per capita GRP calculations are based on population estimates, with 2023 figures surpassing California's average of $93,800 and the national average of $77,366. Key sectors include Government ($52.92B), Manufacturing ($31.67B), and Professional Services ($37.04B) in 2023.",
-    "recommendations": "Consider investing in key sectors like Government, Manufacturing, and Professional Services to sustain economic growth. Monitor per capita GRP trends to ensure continued productivity gains.",
-    "request_and_response_issues": "The data lacks specific annual per capita GRP figures for 2020-2022, which could provide a more detailed understanding of economic productivity trends during those years."
+    "details": "The analysis is based on GRP data from 2019 to 2023, showing a total increase of $64.43 billion. The GRP per capita was calculated by dividing the total GRP by the population for each year. Sectoral contributions were identified, with Government, Professional, Scientific, and Technical Services, and Manufacturing being key contributors. The GRP per capita in 2023 was compared to state and national averages, highlighting San Diego's strong economic performance.",
+    "recommendations": "Consider investing in key sectors like Professional, Scientific, and Technical Services to sustain growth. Monitor economic policies that support these sectors.",
+    "request_and_response_issues": "The data does not specify the exact population figures used for per capita calculations, which could affect accuracy. Sectoral contributions are mentioned but not detailed annually."
 }
