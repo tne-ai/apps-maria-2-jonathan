@@ -22,7 +22,9 @@ session = TNE(uid=UID, bucket_name=BUCKET, project=PROJECT, version=VERSION)
 
 def pdf_maker(content, file_name):
     #create pdf object, set bounds
-    pdf = SimpleDocTemplate(file_name, pagesize=letter)
+    pdf_buffer = BytesIO()
+    #contains pdf_buffer or file_name
+    pdf = SimpleDocTemplate(pdf_buffer, pagesize=letter)
     styleN = styles['Normal']
 
     #Create Cover Page
@@ -137,7 +139,8 @@ def pdf_maker(content, file_name):
             continue
             
     pdf.build(story)
-    session.upload_object(file_name, pdf)
+    #contains pdf_buffer or pdf
+    session.upload_object(file_name, pdf_buffer)
     return file_name
 
 #take in file 
