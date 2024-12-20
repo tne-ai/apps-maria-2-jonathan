@@ -313,7 +313,7 @@ nodes:
       flowState: *ref_2
     width: 238
     height: 466
-    selected: false
+    selected: true
     positionAbsolute:
       x: 1767.8949788965406
       'y': 500.38474020572556
@@ -348,7 +348,7 @@ nodes:
       flowState: *ref_2
     width: 238
     height: 348
-    selected: true
+    selected: false
     positionAbsolute:
       x: 2128.68893889012
       'y': 432.69833625371643
@@ -385,8 +385,8 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: false
-      useUserQuery: false
+      outputToCanvas: true
+      useUserQuery: true
       flowState:
         backend: git
         repo: apps-maria-2-jonathan
