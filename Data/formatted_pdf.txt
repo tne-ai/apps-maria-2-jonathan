@@ -1,20 +1,16 @@
 {
-    "document_filename": "san_diego_grp_report.pdf",
+    "document_filename": "San_Diego_GRP_Report_2019_2023.pdf",
     "sections": [
         {
-            "content": "The economic landscape of San Diego County has shown a remarkable trajectory over the past few years. From 2019 to 2023, the Gross Regional Product (GRP) has consistently increased, reflecting the region's robust economic growth and resilience. In 2019, the GRP stood at approximately $244.28 billion, and by 2023, it had risen to about $308.71 billion. This upward trend highlights the county's ability to adapt and thrive amidst various economic challenges. The following chart provides a visual representation of this growth over the specified period.",
+            "content": "The economic landscape of San Diego County has shown a remarkable trajectory over the past five years, as evidenced by the Gross Regional Product (GRP) figures. From 2019 to 2023, the GRP has consistently increased, reflecting the region's economic resilience and growth. In 2019, the GRP stood at approximately $244.28 billion, and despite the global challenges faced in 2020, it saw a slight increase to $244.82 billion. The upward trend continued more robustly in the subsequent years, with the GRP reaching $268.87 billion in 2021, $296.68 billion in 2022, and finally peaking at $308.71 billion in 2023. This steady growth underscores the dynamic economic activities and the robust economic framework of San Diego County.",
             "type": "raw text"
         },
         {
-            "content": "{\n    \"type\": \"bar\",\n    \"data\": {\n        \"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"],\n        \"datasets\": [{\n            \"data\": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86],\n            \"backgroundColor\": \"skyblue\"\n        }]\n    },\n    \"options\": {\n        \"title\": {\n            \"display\": true,\n            \"text\": \"Gross Regional Product of San Diego County (2019-2023)\"\n        },\n        \"scales\": {\n            \"xAxes\": [{\n                \"scaleLabel\": {\n                    \"display\": true,\n                    \"labelString\": \"Year\"\n                }\n            }],\n            \"yAxes\": [{\n                \"scaleLabel\": {\n                    \"display\": true,\n                    \"labelString\": \"GRP in Dollars\"\n                }\n            }]\n        },\n        \"legend\": {\n            \"display\": true\n        }\n    }\n}",
+            "content": "{\n    \"type\": \"bar\",\n    \"data\": {\n        \"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"],\n        \"datasets\": [{\n            \"data\": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86],\n            \"backgroundColor\": \"skyblue\"\n        }]\n    },\n    \"options\": {\n        \"title\": {\n            \"display\": true,\n            \"text\": \"Gross Regional Product of San Diego County (2019-2023)\"\n        },\n        \"legend\": {\n            \"display\": true\n        },\n        \"scales\": {\n            \"xAxes\": [{\n                \"scaleLabel\": {\n                    \"display\": true,\n                    \"labelString\": \"Year\"\n                }\n            }],\n            \"yAxes\": [{\n                \"scaleLabel\": {\n                    \"display\": true,\n                    \"labelString\": \"GRP in Dollars\"\n                }\n            }]\n        }\n    }\n}",
             "type": "chart"
         },
         {
-            "content": "The table below further details the Gross Regional Product figures for each year from 2019 to 2023, providing a clear numerical perspective on the economic growth experienced by San Diego County.",
-            "type": "raw text"
-        },
-        {
-            "content": "Year | GRP in Dollars\n2019 | 244278846457.50\n2020 | 244822303264.04\n2021 | 268873550391.04\n2022 | 296683894891.99\n2023 | 308710843090.86",
+            "content": "Year | GRP in Dollars\n2019 | 244,278,846,457.50\n2020 | 244,822,303,264.04\n2021 | 268,873,550,391.04\n2022 | 296,683,894,891.99\n2023 | 308,710,843,090.86",
             "type": "table"
         }
     ]
