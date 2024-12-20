@@ -1,25 +1,17 @@
 {
-  "document_filename": "san_diego_economic_growth_report.pdf",
-  "sections": [
-    {
-      "content": "The Gross Regional Product (GRP) of San Diego County from 2019 to 2023 demonstrates a consistent upward trend, reflecting significant economic growth over this period. In 2019, the GRP was approximately $244.28 billion, and by 2023, it had increased to about $308.71 billion. This marks a substantial rise of approximately $64.43 billion over five years. Despite the global economic challenges posed by the COVID-19 pandemic, the GRP showed resilience, with a slight increase from $244.28 billion in 2019 to $244.82 billion in 2020. The following year, 2021, saw a robust recovery with the GRP climbing to $268.87 billion. This growth trajectory continued into 2022, reaching $296.68 billion, and further increased to $308.71 billion by 2023.",
-      "type": "raw text"
-    },
-    {
-      "content": "{\"type\": \"line\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"label\": \"GRP in Billion USD\", \"data\": [244.28, 244.82, 268.87, 296.68, 308.71], \"borderColor\": \"#3e95cd\", \"fill\": false}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"San Diego County GRP from 2019 to 2023\"}, \"legend\": {\"display\": true}}}",
-      "type": "chart"
-    },
-    {
-      "content": "The per capita GRP also experienced a notable increase, rising from approximately $73,347 in 2019 to about $94,916 in 2023. This suggests that economic growth outpaced population growth, resulting in higher economic output per person. Key industries such as Government, Professional, Scientific, and Technical Services, and Manufacturing played significant roles in this economic expansion. The Government sector consistently contributed the highest dollar value to the GRP each year, while the Professional, Scientific, and Technical Services sector exhibited substantial growth, underscoring the region's focus on innovation and technology.",
-      "type": "raw text"
-    },
-    {
-      "content": "{\"type\": \"bar\", \"data\": {\"labels\": [\"Government\", \"Professional, Scientific, and Technical Services\", \"Manufacturing\"], \"datasets\": [{\"label\": \"Contribution to GRP in Billion USD\", \"data\": [75, 60, 50], \"backgroundColor\": [\"#8e5ea2\", \"#3cba9f\", \"#e8c3b9\"]}]}, \"options\": {\"title\": {\"display\": true, \"text\": \"Industry Contributions to GRP\"}, \"legend\": {\"display\": true}}}",
-      "type": "chart"
-    },
-    {
-      "content": "When compared to state and national levels, San Diego County's GRP growth rate aligns closely with that of California, which also experienced growth during this period. Notably, the per capita GRP of San Diego County in 2023, at $94,916, surpasses the national average, highlighting the region's relative prosperity. In summary, from 2019 to 2023, San Diego County's economy exhibited robust growth, driven by key industries and a significant rise in per capita GRP. This growth reflects the region's economic resilience and its ability to recover and expand even amidst global challenges.",
-      "type": "raw text"
-    }
-  ]
+    "document_filename": "grp_growth_report.pdf",
+    "sections": [
+        {
+            "content": "The Gross Regional Product (GRP) has shown a consistent upward trend over the past five years. In 2019, the GRP was recorded at 244.28 billion, and it experienced a slight increase in 2020, reaching 244.82 billion. The growth became more pronounced in the subsequent years, with the GRP rising to 268.87 billion in 2021. This positive trajectory continued in 2022, with the GRP climbing to 296.68 billion. By 2023, the GRP had reached an impressive 308.71 billion, reflecting a robust economic performance over the period.",
+            "type": "raw text"
+        },
+        {
+            "content": "{\"type\": \"bar\", \"data\": {\"labels\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"datasets\": [{\"label\": \"GRP\", \"data\": [244.28, 244.82, 268.87, 296.68, 308.71], \"backgroundColor\": \"rgba(75, 192, 192, 0.2)\", \"borderColor\": \"rgba(75, 192, 192, 1)\", \"borderWidth\": 1}]}, \"options\": {\"scales\": {\"y\": {\"beginAtZero\": true}}, \"plugins\": {\"legend\": {\"display\": true}}}}",
+            "type": "chart"
+        },
+        {
+            "content": "| Year | GRP (in billions) |\n| 2019 | 244.28 |\n| 2020 | 244.82 |\n| 2021 | 268.87 |\n| 2022 | 296.68 |\n| 2023 | 308.71 |",
+            "type": "table"
+        }
+    ]
 }
