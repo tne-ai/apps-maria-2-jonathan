@@ -398,7 +398,7 @@ nodes:
               https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pconv
     width: 238
     height: 466
-    selected: false
+    selected: true
     positionAbsolute:
       x: 1728.3295076163583
       'y': 423.79743646421036
