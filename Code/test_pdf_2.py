@@ -8,6 +8,7 @@ from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 import matplotlib.pyplot as plt
 # from tne.TNE import TNE
+#issue is  |\n|
 
 def pdf_maker(content, file_name):
     #create pdf object, set bounds
