@@ -9,6 +9,7 @@ from reportlab.lib.pagesizes import letter
 import matplotlib.pyplot as plt
 # from tne.TNE import TNE
 #issue is  |\n|
+#./Section_1_pconv -- Give the GRP analysis of San Diego County between 2019 and 2023
 
 def pdf_maker(content, file_name):
     #create pdf object, set bounds
