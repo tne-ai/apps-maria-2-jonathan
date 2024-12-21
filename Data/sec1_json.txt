@@ -1,58 +1,26 @@
 {
     "title": "GRP Analysis of San Diego County (2019-2023)",
-    "summary": "The Gross Regional Product (GRP) of San Diego County exhibited a consistent upward trend from 2019 to 2023, indicating robust economic growth. The GRP increased from approximately $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion rise over the period. The per capita GRP also improved significantly, rising from $73,347 in 2019 to $94,916 in 2023, surpassing both state and national averages.",
+    "description": "The Gross Regional Product (GRP) of San Diego County from 2019 to 2023 shows a consistent upward trend, indicating economic growth over the period.",
     "table": {
-        "columns": [
-            "Year",
-            "GRP (Billion USD)",
-            "Per Capita GRP (USD)"
-        ],
-        "data": [
-            {
-                "Year": 2019,
-                "GRP (Billion USD)": 244.28,
-                "Per Capita GRP (USD)": 73347
-            },
-            {
-                "Year": 2020,
-                "GRP (Billion USD)": 244.82,
-                "Per Capita GRP (USD)": null
-            },
-            {
-                "Year": 2021,
-                "GRP (Billion USD)": 268.87,
-                "Per Capita GRP (USD)": null
-            },
-            {
-                "Year": 2022,
-                "GRP (Billion USD)": 296.68,
-                "Per Capita GRP (USD)": null
-            },
-            {
-                "Year": 2023,
-                "GRP (Billion USD)": 308.71,
-                "Per Capita GRP (USD)": 94916
-            }
+        "headers": ["Year", "GRP (in billion $)", "Per Capita GRP ($)", "Population"],
+        "rows": [
+            ["2019", 244.28, 73346.92, 3330458],
+            ["2020", 244.82, 74277.60, 3296045],
+            ["2021", 268.87, 82099.95, 3274954],
+            ["2022", 296.68, 90557.10, 3276208],
+            ["2023", 308.71, 94915.87, 3252468]
         ]
     },
     "chartData": {
-        "labels": [
-            "2019",
-            "2020",
-            "2021",
-            "2022",
-            "2023"
-        ],
+        "labels": ["2019", "2020", "2021", "2022", "2023"],
         "datasets": [
             {
-                "label": "GRP (Billion USD)",
-                "data": [
-                    244.28,
-                    244.82,
-                    268.87,
-                    296.68,
-                    308.71
-                ]
+                "label": "GRP (in billion $)",
+                "data": [244.28, 244.82, 268.87, 296.68, 308.71]
+            },
+            {
+                "label": "Per Capita GRP ($)",
+                "data": [73346.92, 74277.60, 82099.95, 90557.10, 94915.87]
             }
         ]
     }
