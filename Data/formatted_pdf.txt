@@ -1,1 +1,13 @@
-I'm sorry for the confusion. It seems there was an issue with the input. Could you please provide the raw text and the JSON data containing the chart and table information again? This will help me assist you better.
+{
+    "document_filename": "San_Diego_County_GRP_Analysis_2019_2023.pdf",
+    "sections": [
+        {
+            "content": "The Gross Regional Product (GRP) of San Diego County from 2019 to 2023 demonstrates a consistent upward trend, reflecting significant economic growth over this period. In 2019, the GRP was approximately $244.28 billion, with a per capita GRP of $73,346.92, based on a population of 3,330,458. The following year, 2020, saw a slight increase in GRP to about $244.82 billion. Despite a decrease in population to 3,296,045, the per capita GRP rose to $74,277.60, indicating an increase in economic output per person. This trend continued into 2021, where the GRP experienced a significant rise to approximately $268.87 billion. The per capita GRP jumped to $82,099.95, even as the population slightly decreased to 3,274,954, suggesting a strong economic recovery and growth post-2020. By 2022, the GRP had grown to around $296.68 billion, with the per capita GRP increasing to $90,557.10, supported by a stable population of 3,276,208. This reflects continued economic expansion and increased productivity. In 2023, the GRP further increased to approximately $308.71 billion, with the per capita GRP reaching $94,915.87, despite a population decrease to 3,252,468. The sustained rise in per capita GRP suggests ongoing economic growth and efficiency. Overall, over the five-year period, San Diego County's GRP increased by approximately $64.43 billion, from $244.28 billion in 2019 to $308.71 billion in 2023. The per capita GRP increased by $21,568.95, from $73,346.92 in 2019 to $94,915.87 in 2023. This data indicates a robust economic performance, with significant growth in economic output both in total and on a per capita basis, despite fluctuations in population. This suggests improvements in productivity and economic resilience in San Diego County.",
+            "type": "raw text"
+        },
+        {
+            "content": "{\"xAxis\": [\"2019\", \"2020\", \"2021\", \"2022\", \"2023\"], \"yAxis\": {\"GRP (billion $)\": [244.28, 244.82, 268.87, 296.68, 308.71], \"Per Capita GRP ($)\": [73346.92, 74277.6, 82099.95, 90557.1, 94915.87]}, \"legend\": true}",
+            "type": "chart"
+        }
+    ]
+}
