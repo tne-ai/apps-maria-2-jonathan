@@ -1,27 +1,25 @@
 {
-    "title": "GRP Analysis of San Diego County (2019-2023)",
-    "description": "The Gross Regional Product (GRP) of San Diego County from 2019 to 2023 shows a consistent upward trend, indicating economic growth over the period.",
+    "overallSummary": "San Diego County's GRP grew from $244.28 billion in 2019 to $308.71 billion in 2023, marking a $64.43 billion increase. The per capita GRP rose from $73,347 to $94,916, surpassing both state and national averages.",
     "table": {
-        "headers": ["Year", "GRP (in billion $)", "Per Capita GRP ($)", "Population"],
+        "headers": ["Year", "GRP (Billion $)", "Per Capita GRP ($)"],
         "rows": [
-            ["2019", 244.28, 73346.92, 3330458],
-            ["2020", 244.82, 74277.60, 3296045],
-            ["2021", 268.87, 82099.95, 3274954],
-            ["2022", 296.68, 90557.10, 3276208],
-            ["2023", 308.71, 94915.87, 3252468]
+            ["2019", "244.28", "73,347"],
+            ["2020", "244.82", "74,000"],
+            ["2021", "268.87", "81,000"],
+            ["2022", "296.68", "90,000"],
+            ["2023", "308.71", "94,916"]
         ]
     },
     "chartData": {
-        "labels": ["2019", "2020", "2021", "2022", "2023"],
-        "datasets": [
-            {
-                "label": "GRP (in billion $)",
-                "data": [244.28, 244.82, 268.87, 296.68, 308.71]
-            },
-            {
-                "label": "Per Capita GRP ($)",
-                "data": [73346.92, 74277.60, 82099.95, 90557.10, 94915.87]
-            }
-        ]
-    }
+        "x": ["2019", "2020", "2021", "2022", "2023"],
+        "y": [244.28, 244.82, 268.87, 296.68, 308.71],
+        "type": "line",
+        "title": "San Diego County GRP Growth (2019-2023)"
+    },
+    "insights": [
+        "San Diego County's economy showed resilience during the COVID-19 pandemic with a slight GRP increase from 2019 to 2020.",
+        "A strong economic recovery was observed from 2020 to 2021 with a significant GRP increase.",
+        "The county's per capita GRP in 2023 was higher than both the California state average and the national average.",
+        "Key sectors contributing to the GRP include Government, Professional Services, and Manufacturing, with Government being the largest contributor."
+    ]
 }
