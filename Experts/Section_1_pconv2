@@ -113,12 +113,12 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: true
+      outputToCanvas: false
       useUserQuery: false
       flowState: *ref_0
     width: 238
     height: 466
-    selected: false
+    selected: true
     dragging: false
     positionAbsolute:
       x: 875.7491391094012
@@ -134,7 +134,7 @@ nodes:
       outputName: sec1_bullets.txt
     width: 238
     height: 190
-    selected: true
+    selected: false
     positionAbsolute:
       x: 889.5949483465647
       'y': 1320.6920208491324
