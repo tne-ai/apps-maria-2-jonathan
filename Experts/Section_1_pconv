@@ -357,20 +357,20 @@ nodes:
       x: 906.419268966938
       'y': 482.7963253829437
     dragging: false
-  - id: Ro05ZedK3521D4kU8Rj5_
+  - id: ZZGl7UoWC06wtzCWanmaQ
     type: llm
     position:
-      x: 1728.3295076163583
-      'y': 423.79743646421036
+      x: 1708.419268966938
+      'y': 371.2963253829437
     data:
-      id: Ro05ZedK3521D4kU8Rj5_
-      title: Format PDF
+      id: ZZGl7UoWC06wtzCWanmaQ
+      title: PDF Formatter
       input: ''
       slashgptManifest: pdf_formatter.model
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: true
+      outputToCanvas: false
       useUserQuery: false
       flowState:
         backend: git
@@ -378,14 +378,14 @@ nodes:
         content:
           name: Section_1_pconv
           path: Experts/Section_1_pconv
-          sha: 0dd68f42cbdfa950cc48c5957767ece5d4fad66e
-          size: 14409
+          sha: ca13fb96d2998e181eefcb85bd6d2c7e8a9ef339
+          size: 13891
           url: >-
             https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pconv?ref=main
           html_url: >-
             https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pconv
           git_url: >-
-            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/0dd68f42cbdfa950cc48c5957767ece5d4fad66e
+            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/ca13fb96d2998e181eefcb85bd6d2c7e8a9ef339
           download_url: >-
             https://raw.githubusercontent.com/tne-ai/apps-maria-2-jonathan/main/Experts/Section_1_pconv
           type: file
@@ -393,42 +393,37 @@ nodes:
             self: >-
               https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pconv?ref=main
             git: >-
-              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/0dd68f42cbdfa950cc48c5957767ece5d4fad66e
+              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/ca13fb96d2998e181eefcb85bd6d2c7e8a9ef339
             html: >-
               https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pconv
     width: 238
     height: 466
     selected: true
     positionAbsolute:
-      x: 1728.3295076163583
-      'y': 423.79743646421036
+      x: 1708.419268966938
+      'y': 371.2963253829437
     dragging: false
 edges:
-  - source: Ro05ZedK3521D4kU8Rj5_
+  - source: 123QUbtgFyqiRXv4R-llv
+    sourceHandle: b
+    target: ZZGl7UoWC06wtzCWanmaQ
+    targetHandle: t
+    id: Fnm_Ku
+  - source: ihMxfkDQHY9AfpmrNz0A6
+    sourceHandle: b
+    target: ZZGl7UoWC06wtzCWanmaQ
+    targetHandle: t
+    id: FDc5nq
+  - source: ZZGl7UoWC06wtzCWanmaQ
     sourceHandle: r
     target: c8o5gWqCtqMu8074up0Kf
     targetHandle: l
-    id: qlDk6d
-  - source: Ro05ZedK3521D4kU8Rj5_
-    sourceHandle: b
-    target: IGZ01iEzgI3JKFgLZ9Ahr
-    targetHandle: t
-    id: IVf_uC
+    id: aP1CBQ
   - source: MNS7JOuqdlUNzslAXTjpi
     sourceHandle: r
-    target: Ro05ZedK3521D4kU8Rj5_
+    target: ZZGl7UoWC06wtzCWanmaQ
     targetHandle: l
-    id: l_vTI4
-  - source: ihMxfkDQHY9AfpmrNz0A6
-    sourceHandle: b
-    target: Ro05ZedK3521D4kU8Rj5_
-    targetHandle: t
-    id: Hl84pb
-  - source: 123QUbtgFyqiRXv4R-llv
-    sourceHandle: b
-    target: Ro05ZedK3521D4kU8Rj5_
-    targetHandle: t
-    id: 4NDghI
+    id: dymJOe
   - source: 9Fj9TqO64I_3Vmh6eSVaT
     sourceHandle: b
     target: Q518Bu7L5EoIvjUglp6q_
