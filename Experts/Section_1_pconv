@@ -370,7 +370,7 @@ nodes:
       toolJson: ''
       toolCode: ''
       outputType: overwrite
-      outputToCanvas: false
+      outputToCanvas: true
       useUserQuery: false
       flowState:
         backend: git
@@ -404,6 +404,11 @@ nodes:
       'y': 371.2963253829437
     dragging: false
 edges:
+  - source: ZZGl7UoWC06wtzCWanmaQ
+    sourceHandle: b
+    target: IGZ01iEzgI3JKFgLZ9Ahr
+    targetHandle: t
+    id: 3QFrgv
   - source: 123QUbtgFyqiRXv4R-llv
     sourceHandle: b
     target: ZZGl7UoWC06wtzCWanmaQ
