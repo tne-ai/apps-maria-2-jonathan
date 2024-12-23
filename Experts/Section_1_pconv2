@@ -118,7 +118,7 @@ nodes:
       flowState: *ref_0
     width: 238
     height: 466
-    selected: true
+    selected: false
     dragging: false
     positionAbsolute:
       x: 875.7491391094012
@@ -139,7 +139,103 @@ nodes:
       x: 889.5949483465647
       'y': 1320.6920208491324
     dragging: false
+  - id: RliLKmzIQvYxEGB-Px7PH
+    type: llm
+    position:
+      x: 1338.18484322544
+      'y': 771.5785898609015
+    data:
+      id: RliLKmzIQvYxEGB-Px7PH
+      title: New Model
+      input: ''
+      slashgptManifest: ie_item_generator.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: false
+      useUserQuery: false
+      flowState: &ref_1
+        backend: git
+        repo: apps-maria-2-jonathan
+        content:
+          name: Section_1_pconv2
+          path: Experts/Section_1_pconv2
+          sha: c5dd88fa15e5710edf8d29369d2d5e5fba865c63
+          size: 4203
+          url: >-
+            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pconv2?ref=main
+          html_url: >-
+            https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pconv2
+          git_url: >-
+            https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/c5dd88fa15e5710edf8d29369d2d5e5fba865c63
+          download_url: >-
+            https://raw.githubusercontent.com/tne-ai/apps-maria-2-jonathan/main/Experts/Section_1_pconv2
+          type: file
+          _links:
+            self: >-
+              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/contents/Experts/Section_1_pconv2?ref=main
+            git: >-
+              https://api.github.com/repos/tne-ai/apps-maria-2-jonathan/git/blobs/c5dd88fa15e5710edf8d29369d2d5e5fba865c63
+            html: >-
+              https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pconv2
+    width: 238
+    height: 466
+    selected: false
+    positionAbsolute:
+      x: 1338.18484322544
+      'y': 771.5785898609015
+    dragging: false
+  - id: IGbIeRNrnxT9Uv47ETaQR
+    type: out
+    position:
+      x: 1349.5280559786602
+      'y': 1340.359686486655
+    data:
+      id: IGbIeRNrnxT9Uv47ETaQR
+      title: Save File
+      outputName: sec1_json.txt
+    width: 238
+    height: 190
+    selected: false
+    positionAbsolute:
+      x: 1349.5280559786602
+      'y': 1340.359686486655
+    dragging: false
+  - id: lKXMhVHkHbuzj8hZH0V7V
+    type: python_code
+    position:
+      x: 1742.0032172400772
+      'y': 773.1990488256472
+    data:
+      id: lKXMhVHkHbuzj8hZH0V7V
+      title: Table + Chart
+      module: get_table_and_chart.py
+      outputType: overwrite
+      outputToCanvas: false
+      flowState: *ref_1
+    width: 238
+    height: 348
+    selected: false
+    positionAbsolute:
+      x: 1742.0032172400772
+      'y': 773.1990488256472
+    dragging: false
 edges:
+  - source: RliLKmzIQvYxEGB-Px7PH
+    sourceHandle: r
+    target: lKXMhVHkHbuzj8hZH0V7V
+    targetHandle: l
+    id: thmoBU
+  - source: RliLKmzIQvYxEGB-Px7PH
+    sourceHandle: b
+    target: IGbIeRNrnxT9Uv47ETaQR
+    targetHandle: t
+    id: WAwygq
+  - source: w1aFMIQDz_NX0WbPnvMy2
+    sourceHandle: r
+    target: RliLKmzIQvYxEGB-Px7PH
+    targetHandle: l
+    id: wk_E89
   - source: w1aFMIQDz_NX0WbPnvMy2
     sourceHandle: b
     target: 5VcyXBhF0QyVb-nXdPYNh
