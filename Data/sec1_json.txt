@@ -1,71 +1,28 @@
+json
 {
-    "totalGRP": {
-        "2019": 244.28,
-        "2020": 244.82,
-        "2021": 268.87,
-        "2022": 296.68,
-        "2023": 308.71
+    "title": "San Diego County GRP Analysis (2019-2023)",
+    "summary": "Over the five-year period, San Diego County experienced consistent growth in its Gross Regional Product, with the total GRP increasing from approximately $244.3 billion in 2019 to $308.7 billion in 2023. The GRP per capita also showed a steady increase, rising from $73,346.92 in 2019 to $94,915.87 in 2023. This indicates that the economic output per person in the county improved significantly. The population of San Diego County showed a slight decline from 2019 to 2023, which, combined with the rising GRP, contributed to the increase in GRP per capita. Overall, San Diego County demonstrated strong economic growth between 2019 and 2023, with both total GRP and GRP per capita showing positive trends.",
+    "table": {
+        "columns": ["Year", "Total GRP", "Population", "GRP per Capita"],
+        "data": [
+            ["2019", "$244,278,846,457.50", "3,330,458", "$73,346.92"],
+            ["2020", "$244,822,303,264.04", "3,296,045", "$74,277.60"],
+            ["2021", "$268,873,550,391.04", "3,274,954", "$82,099.95"],
+            ["2022", "$296,683,894,891.99", "3,276,208", "$90,557.10"],
+            ["2023", "$308,710,843,090.86", "3,252,468", "$94,915.87"]
+        ]
     },
-    "perCapitaGRP": {
-        "2019": 73347,
-        "2020": 74278,
-        "2021": 82100,
-        "2022": 90557,
-        "2023": 94916
-    },
-    "industryPerformance": [
-        {
-            "industry": "Accommodation and Food Services",
-            "performance": "Fluctuations with decline in 2020, recovery in subsequent years"
-        },
-        {
-            "industry": "Administrative and Support and Waste Management and Remediation Services",
-            "performance": "Consistent growth"
-        },
-        {
-            "industry": "Agriculture, Forestry, Fishing and Hunting",
-            "performance": "Steady increase in GRP contribution"
-        },
-        {
-            "industry": "Arts, Entertainment, and Recreation",
-            "performance": "Heavily impacted in 2020, recovery in following years"
-        },
-        {
-            "industry": "Construction",
-            "performance": "Steady growth"
-        },
-        {
-            "industry": "Finance and Insurance",
-            "performance": "Significant growth, especially in 2020 and 2021"
-        },
-        {
-            "industry": "Government",
-            "performance": "Consistently largest share to GRP"
-        },
-        {
-            "industry": "Health Care and Social Assistance",
-            "performance": "Steady growth, essential role during pandemic"
-        },
-        {
-            "industry": "Information",
-            "performance": "Growth, particularly in 2022 and 2023"
-        },
-        {
-            "industry": "Manufacturing",
-            "performance": "Strong contributor, consistent growth"
-        },
-        {
-            "industry": "Professional, Scientific, and Technical Services",
-            "performance": "Robust growth, particularly in 2022 and 2023"
-        },
-        {
-            "industry": "Real Estate and Rental and Leasing",
-            "performance": "Steady growth"
-        }
-    ],
     "chartData": {
-        "years": [2019, 2020, 2021, 2022, 2023],
-        "totalGRP": [244.28, 244.82, 268.87, 296.68, 308.71],
-        "perCapitaGRP": [73347, 74278, 82100, 90557, 94916]
+        "labels": ["2019", "2020", "2021", "2022", "2023"],
+        "datasets": [
+            {
+                "label": "Total GRP",
+                "data": [244278846457.50, 244822303264.04, 268873550391.04, 296683894891.99, 308710843090.86]
+            },
+            {
+                "label": "GRP per Capita",
+                "data": [73346.92, 74277.60, 82099.95, 90557.10, 94915.87]
+            }
+        ]
     }
 }
