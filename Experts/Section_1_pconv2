@@ -1,0 +1,178 @@
+nodes:
+  - id: gmCKRlh9cBOTvY_n4wx7u
+    type: file
+    position:
+      x: 290.95648662756605
+      'y': 323.33754304453
+    data:
+      id: gmCKRlh9cBOTvY_n4wx7u
+      title: Overall Prompt TXT
+      fileName: Economic Scan Overview.txt
+      flowState: &ref_0
+        backend: git
+        repo: apps-maria-2-jonathan
+    width: 238
+    height: 250
+    selected: false
+    dragging: false
+  - id: lwJh8jB5oVd-iwOs0s6xM
+    type: file
+    position:
+      x: 585.1142365205372
+      'y': 326.8603903486374
+    data:
+      id: lwJh8jB5oVd-iwOs0s6xM
+      title: Section 1 Prompt TXT
+      fileName: Section 1 Gross Regional Product.txt
+      flowState: *ref_0
+    width: 238
+    height: 250
+    selected: false
+    positionAbsolute:
+      x: 585.1142365205372
+      'y': 326.8603903486374
+    dragging: false
+  - id: 9Bt-S2RwnTAwr9BInDHKO
+    type: file
+    position:
+      x: 870.4648681532398
+      'y': 326.86039034863745
+    data:
+      id: 9Bt-S2RwnTAwr9BInDHKO
+      title: Data
+      fileName: sec1-1_San Diego County_grp_data.csv
+      flowState: *ref_0
+    width: 238
+    height: 250
+    selected: false
+    positionAbsolute:
+      x: 870.4648681532398
+      'y': 326.86039034863745
+    dragging: false
+  - id: 0X1OUQvVXJgxkGrEShZWf
+    type: file
+    position:
+      x: 1155.8154997859422
+      'y': 335.667508608906
+    data:
+      id: 0X1OUQvVXJgxkGrEShZWf
+      title: Data
+      fileName: sec1-2_San Diego County_per_capita_grp_data.csv
+      flowState: *ref_0
+    width: 238
+    height: 274
+    selected: false
+    positionAbsolute:
+      x: 1155.8154997859422
+      'y': 335.667508608906
+    dragging: false
+  - id: q21bPCWhedcpe5AzJQaKS
+    type: file
+    position:
+      x: 1435.8818604624835
+      'y': 335.667508608906
+    data:
+      id: q21bPCWhedcpe5AzJQaKS
+      title: Data
+      fileName: sec1-3_San Diego_grp_data.csv
+      flowState: *ref_0
+    width: 238
+    height: 250
+    selected: false
+    positionAbsolute:
+      x: 1435.8818604624835
+      'y': 335.667508608906
+    dragging: false
+  - id: o_ytdv7NdntL40eR-Tcv2
+    type: file
+    position:
+      x: 1721.2324920951862
+      'y': 342.71320321712085
+    data:
+      id: o_ytdv7NdntL40eR-Tcv2
+      title: Data
+      fileName: sec1-4_San Diego_per_capita_grp_data.csv
+      flowState: *ref_0
+    width: 238
+    height: 274
+    selected: false
+    positionAbsolute:
+      x: 1721.2324920951862
+      'y': 342.71320321712085
+    dragging: false
+  - id: w1aFMIQDz_NX0WbPnvMy2
+    type: llm
+    position:
+      x: 875.7491391094012
+      'y': 777.8252585018771
+    data:
+      id: w1aFMIQDz_NX0WbPnvMy2
+      title: Section 1
+      input: ''
+      slashgptManifest: Section_1.model
+      toolJson: ''
+      toolCode: ''
+      outputType: overwrite
+      outputToCanvas: true
+      useUserQuery: false
+      flowState: *ref_0
+    width: 238
+    height: 466
+    selected: false
+    dragging: false
+    positionAbsolute:
+      x: 875.7491391094012
+      'y': 777.8252585018771
+  - id: 5VcyXBhF0QyVb-nXdPYNh
+    type: out
+    position:
+      x: 889.5949483465647
+      'y': 1320.6920208491324
+    data:
+      id: 5VcyXBhF0QyVb-nXdPYNh
+      title: Save File
+      outputName: sec1_bullets.txt
+    width: 238
+    height: 190
+    selected: true
+    positionAbsolute:
+      x: 889.5949483465647
+      'y': 1320.6920208491324
+    dragging: false
+edges:
+  - source: w1aFMIQDz_NX0WbPnvMy2
+    sourceHandle: b
+    target: 5VcyXBhF0QyVb-nXdPYNh
+    targetHandle: t
+    id: TNOEXo
+  - source: o_ytdv7NdntL40eR-Tcv2
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: SwakYq
+  - source: q21bPCWhedcpe5AzJQaKS
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: rbV_M7
+  - source: 0X1OUQvVXJgxkGrEShZWf
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: iDKzlu
+  - source: 9Bt-S2RwnTAwr9BInDHKO
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: ErOG83
+  - source: lwJh8jB5oVd-iwOs0s6xM
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: 29dYRG
+  - source: gmCKRlh9cBOTvY_n4wx7u
+    sourceHandle: b
+    target: w1aFMIQDz_NX0WbPnvMy2
+    targetHandle: t
+    id: 3YzB7O
+description: null
