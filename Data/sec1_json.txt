@@ -1,26 +1,76 @@
 {
-    "summary": "San Diego County's Gross Regional Product (GRP) demonstrated a positive growth trend from 2019 to 2023, with significant recovery and growth following the economic challenges of 2020. The total GRP increased from approximately $244.28 billion in 2019 to $308.71 billion in 2023. Per capita GRP also rose from $73,347 in 2019 to $94,916 in 2023, indicating economic growth and improved productivity. Key sectors contributing to this growth included government, manufacturing, and professional services, while industries like accommodation and food services, and arts and entertainment showed resilience and recovery post-pandemic.",
-    "table": {
-        "headers": ["Year", "Total GRP (Billion $)", "Per Capita GRP ($)"],
-        "rows": [
-            ["2019", "244.28", "73,347"],
-            ["2020", "244.82", "74,278"],
-            ["2021", "268.87", "82,100"],
-            ["2022", "296.68", "90,557"],
-            ["2023", "308.71", "94,916"]
-        ]
+    "totalGRP": {
+        "2019": 244.28,
+        "2020": 244.82,
+        "2021": 268.87,
+        "2022": 296.68,
+        "2023": 308.71
     },
+    "perCapitaGRP": {
+        "2019": 73347,
+        "2020": 74278,
+        "2021": 82100,
+        "2022": 90557,
+        "2023": 94916
+    },
+    "industryPerformance": [
+        {
+            "industry": "Accommodation and Food Services",
+            "performance": "Fluctuations with decline in 2020, recovery and growth in subsequent years"
+        },
+        {
+            "industry": "Administrative and Support and Waste Management and Remediation Services",
+            "performance": "Consistent growth over the years"
+        },
+        {
+            "industry": "Agriculture, Forestry, Fishing and Hunting",
+            "performance": "Steady increase in GRP contribution"
+        },
+        {
+            "industry": "Arts, Entertainment, and Recreation",
+            "performance": "Impacted in 2020, recovered in following years"
+        },
+        {
+            "industry": "Construction",
+            "performance": "Consistent growth throughout the period"
+        },
+        {
+            "industry": "Finance and Insurance",
+            "performance": "Significant growth, especially in 2020 and 2021"
+        },
+        {
+            "industry": "Government",
+            "performance": "Largest contributor with steady growth each year"
+        },
+        {
+            "industry": "Health Care and Social Assistance",
+            "performance": "Consistent growth, reflecting its importance in the region"
+        },
+        {
+            "industry": "Information",
+            "performance": "Growth, particularly in 2022 and 2023"
+        },
+        {
+            "industry": "Manufacturing",
+            "performance": "Strong contributor with growth observed in most years"
+        },
+        {
+            "industry": "Professional, Scientific, and Technical Services",
+            "performance": "Robust growth, particularly in 2022 and 2023"
+        },
+        {
+            "industry": "Real Estate and Rental and Leasing",
+            "performance": "Growth, especially in 2023"
+        },
+        {
+            "industry": "Retail Trade",
+            "performance": "Consistent growth with notable increase in 2023"
+        }
+    ],
+    "summary": "San Diego County's GRP demonstrated resilience and growth from 2019 to 2023. The region's economy recovered from the pandemic's impact in 2020, with significant growth in subsequent years. Key industries such as government, manufacturing, professional services, and finance played crucial roles in driving this economic growth. The per capita GRP also showed a positive trend, indicating an increase in economic productivity and prosperity for the residents of San Diego County.",
     "chartData": {
-        "labels": ["2019", "2020", "2021", "2022", "2023"],
-        "datasets": [
-            {
-                "label": "Total GRP (Billion $)",
-                "data": [244.28, 244.82, 268.87, 296.68, 308.71]
-            },
-            {
-                "label": "Per Capita GRP ($)",
-                "data": [73347, 74278, 82100, 90557, 94916]
-            }
-        ]
+        "years": [2019, 2020, 2021, 2022, 2023],
+        "totalGRP": [244.28, 244.82, 268.87, 296.68, 308.71],
+        "perCapitaGRP": [73347, 74278, 82100, 90557, 94916]
     }
 }
