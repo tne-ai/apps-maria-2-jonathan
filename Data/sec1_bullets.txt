@@ -1,4 +1,4 @@
-To analyze the Gross Regional Product (GRP) of San Diego County between 2019 and 2023, we will examine the data provided in the CSV files. The analysis will focus on the total GRP, per capita GRP, and the performance of various industries over the years.
+To analyze the Gross Regional Product (GRP) of San Diego County between 2019 and 2023, we will examine the data provided in the CSV files. The analysis will focus on the total GRP, per capita GRP, and the performance of various industries over the specified period.
 
 ### Total GRP Analysis
 
@@ -18,23 +18,20 @@ To analyze the Gross Regional Product (GRP) of San Diego County between 2019 and
 
 ### Industry Performance
 
-- **Accommodation and Food Services**: This industry experienced fluctuations, with a decline in 2020 due to the pandemic but showed recovery in subsequent years.
+- **Accommodation and Food Services**: This industry experienced fluctuations, with a decline in 2020 due to the pandemic, followed by recovery and growth in subsequent years.
 - **Administrative and Support and Waste Management and Remediation Services**: This sector showed consistent growth over the years.
 - **Agriculture, Forestry, Fishing and Hunting**: This industry had a steady increase in GRP contribution.
-- **Arts, Entertainment, and Recreation**: This sector was heavily impacted in 2020 but showed recovery in the following years.
+- **Arts, Entertainment, and Recreation**: Similar to Accommodation and Food Services, this sector was impacted in 2020 but recovered in the following years.
 - **Construction**: The construction industry showed consistent growth throughout the period.
 - **Finance and Insurance**: This sector experienced significant growth, especially in 2020 and 2021.
 - **Government**: The government sector remained the largest contributor to the GRP, with steady growth each year.
-- **Health Care and Social Assistance**: This sector showed consistent growth, reflecting its importance in the region.
+- **Health Care and Social Assistance**: This industry showed consistent growth, reflecting its importance in the region.
 - **Information**: The information sector saw growth, particularly in 2022 and 2023.
 - **Manufacturing**: Manufacturing remained a strong contributor, with growth observed in most years.
 - **Professional, Scientific, and Technical Services**: This sector showed robust growth, particularly in 2022 and 2023.
-- **Real Estate and Rental and Leasing**: This industry showed steady growth over the years.
-- **Retail Trade**: Retail trade experienced growth, with a notable increase in 2023.
-- **Transportation and Warehousing**: This sector showed growth, particularly in 2022 and 2023.
-- **Utilities**: The utilities sector showed moderate growth over the period.
-- **Wholesale Trade**: This sector experienced growth, with a significant increase in 2022 and 2023.
+- **Real Estate and Rental and Leasing**: This industry experienced growth, especially in 2023.
+- **Retail Trade**: Retail trade showed consistent growth, with a notable increase in 2023.
 
-### Conclusion
+### Summary
 
-Overall, San Diego County's GRP showed a positive growth trend from 2019 to 2023, with significant recovery and growth post-2020. The per capita GRP also increased steadily, indicating economic growth and improved productivity. The government, manufacturing, and professional services sectors were major contributors to the GRP, while industries like accommodation and food services, and arts and entertainment showed resilience and recovery post-pandemic.
+Overall, San Diego County's GRP demonstrated resilience and growth from 2019 to 2023. The region's economy recovered from the pandemic's impact in 2020, with significant growth in subsequent years. Key industries such as government, manufacturing, professional services, and finance played crucial roles in driving this economic growth. The per capita GRP also showed a positive trend, indicating an increase in economic productivity and prosperity for the residents of San Diego County.
