@@ -154,7 +154,7 @@ nodes:
       outputType: overwrite
       outputToCanvas: false
       useUserQuery: false
-      flowState: &ref_1
+      flowState:
         backend: git
         repo: apps-maria-2-jonathan
         content:
@@ -201,31 +201,7 @@ nodes:
       x: 1349.5280559786602
       'y': 1340.359686486655
     dragging: false
-  - id: lKXMhVHkHbuzj8hZH0V7V
-    type: python_code
-    position:
-      x: 1742.0032172400772
-      'y': 773.1990488256472
-    data:
-      id: lKXMhVHkHbuzj8hZH0V7V
-      title: Table + Chart
-      module: get_table_and_chart.py
-      outputType: overwrite
-      outputToCanvas: false
-      flowState: *ref_1
-    width: 238
-    height: 348
-    selected: false
-    positionAbsolute:
-      x: 1742.0032172400772
-      'y': 773.1990488256472
-    dragging: false
 edges:
-  - source: RliLKmzIQvYxEGB-Px7PH
-    sourceHandle: r
-    target: lKXMhVHkHbuzj8hZH0V7V
-    targetHandle: l
-    id: thmoBU
   - source: RliLKmzIQvYxEGB-Px7PH
     sourceHandle: b
     target: IGbIeRNrnxT9Uv47ETaQR
