@@ -1,35 +1,34 @@
-The Gross Regional Product (GRP) analysis for San Diego County from 2019 to 2023 is as follows:
+To analyze the Gross Regional Product (GRP) of San Diego County between 2019 and 2023, we will examine the data provided in the `sec1-2_San Diego County_per_capita_grp_data.csv` file. This file contains information on the total GRP in dollars, population, and GRP per capita for San Diego County, the state of California, and the United States.
 
-1. **2019**:
-   - Total GRP: $244.28 billion
-   - Population: 3,330,458
-   - GRP per Capita: $73,346.92
+### San Diego County GRP Analysis (2019-2023)
 
-2. **2020**:
-   - Total GRP: $244.82 billion
-   - Population: 3,296,045
-   - GRP per Capita: $74,277.60
-   - Analysis: Despite the challenges posed by the COVID-19 pandemic, San Diego County's GRP saw a slight increase from 2019. The GRP per capita also increased, indicating a relatively stable economic performance during a challenging year.
+1. **Total GRP in Dollars:**
+   - **2019:** $244,278,846,457.50
+   - **2020:** $244,822,303,264.04
+   - **2021:** $268,873,550,391.04
+   - **2022:** $296,683,894,891.99
+   - **2023:** $308,710,843,090.86
 
-3. **2021**:
-   - Total GRP: $268.87 billion
-   - Population: 3,274,954
-   - GRP per Capita: $82,099.95
-   - Analysis: The year 2021 marked a significant recovery and growth in the GRP, with an increase of approximately $24.05 billion from 2020. The GRP per capita also saw a substantial rise, reflecting economic recovery and growth post-pandemic.
+   The total GRP of San Diego County has shown a consistent increase from 2019 to 2023. The GRP increased from approximately $244.28 billion in 2019 to $308.71 billion in 2023. This represents an overall growth of approximately 26.4% over the five-year period.
 
-4. **2022**:
-   - Total GRP: $296.68 billion
-   - Population: 3,276,208
-   - GRP per Capita: $90,557.10
-   - Analysis: The GRP continued to grow in 2022, with an increase of about $27.81 billion from 2021. The GRP per capita also increased significantly, indicating strong economic performance and growth in the region.
+2. **Population:**
+   - **2019:** 3,330,458
+   - **2020:** 3,296,045
+   - **2021:** 3,274,954
+   - **2022:** 3,276,208
+   - **2023:** 3,252,468
 
-5. **2023**:
-   - Total GRP: $308.71 billion
-   - Population: 3,252,468
-   - GRP per Capita: $94,915.87
-   - Analysis: In 2023, San Diego County's GRP reached $308.71 billion, marking a continued upward trend. The GRP per capita also increased, suggesting sustained economic growth and prosperity in the region.
+   The population of San Diego County has experienced a slight decline over the years, from 3,330,458 in 2019 to 3,252,468 in 2023. This represents a decrease of approximately 2.3% over the five-year period.
 
-**Overall Analysis**:
-- Over the five-year period from 2019 to 2023, San Diego County's GRP increased by approximately $64.43 billion, reflecting a strong and resilient economy.
-- The GRP per capita also showed a consistent upward trend, increasing by $21,568.95 over the same period, indicating improved economic conditions and productivity per individual in the county.
-- The data suggests that San Diego County has experienced robust economic growth, particularly in the post-pandemic years, with significant increases in both total GRP and GRP per capita.
+3. **GRP Per Capita:**
+   - **2019:** $73,346.92
+   - **2020:** $74,277.60
+   - **2021:** $82,099.95
+   - **2022:** $90,557.10
+   - **2023:** $94,915.87
+
+   The GRP per capita has shown a significant increase from 2019 to 2023. It rose from $73,346.92 in 2019 to $94,915.87 in 2023, indicating an increase of approximately 29.4%. This increase in GRP per capita suggests that the economic output per person in San Diego County has improved over the years.
+
+### Summary
+
+Overall, San Diego County's GRP has experienced substantial growth from 2019 to 2023, both in total dollars and per capita terms. Despite a slight decline in population, the economic output per person has increased significantly, indicating a robust economic performance in the region. This growth can be attributed to various factors, including economic diversification, innovation, and investment in key industries.
