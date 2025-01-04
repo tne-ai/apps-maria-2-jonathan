@@ -255,12 +255,56 @@ nodes:
       flowState: *ref_1
     width: 238
     height: 348
-    selected: true
+    selected: false
     positionAbsolute:
       x: 1675.094489361376
       'y': 995.3486147655926
     dragging: false
+  - id: zlhpeVqos4spvWySXGijP
+    type: file
+    position:
+      x: 1905.094489361376
+      'y': 703.3486147655926
+    data:
+      id: zlhpeVqos4spvWySXGijP
+      title: Data
+      fileName: sec1_bullets.txt
+      flowState: *ref_1
+    width: 238
+    height: 226
+    selected: false
+    positionAbsolute:
+      x: 1905.094489361376
+      'y': 703.3486147655926
+    dragging: false
+  - id: DEiRvMlVq7SLnobighGzX
+    type: file
+    position:
+      x: 2181.094489361376
+      'y': 701.3486147655926
+    data:
+      id: DEiRvMlVq7SLnobighGzX
+      title: Data
+      fileName: pdf_formatter_template.txt
+      flowState: *ref_1
+    width: 238
+    height: 250
+    selected: false
+    positionAbsolute:
+      x: 2181.094489361376
+      'y': 701.3486147655926
+    dragging: false
 edges:
+  - source: DEiRvMlVq7SLnobighGzX
+    sourceHandle: b
+    target: BdGEm8J9fRgLtuVs8hx5Q
+    targetHandle: t
+    id: UBfxdL
+  - source: zlhpeVqos4spvWySXGijP
+    sourceHandle: b
+    target: BdGEm8J9fRgLtuVs8hx5Q
+    targetHandle: t
+    id: uCW7c1
   - source: RliLKmzIQvYxEGB-Px7PH
     sourceHandle: r
     target: BdGEm8J9fRgLtuVs8hx5Q
