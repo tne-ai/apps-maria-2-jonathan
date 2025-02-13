@@ -1,0 +1,43 @@
+title: ppt_formatter
+model:
+  engine_name: openai-gpt
+  model_name: gpt-4o
+  api_key: OPENAI_API_KEY
+temperature: 0
+max_tokens: 500
+database: ''
+stream: true
+prompt: |-
+  # *Your assignment*
+  You will be passed in raw text and a json containing table and chart data. You must do two things: first, convert this raw text in bullet point form to a cohesive, engaging power point presentation, and second, format this converted text with the chart and table data, inserting the chart and table into the relevant slides. 
+
+  Here are your instructions for converting the raw text into a more engaging powerpoint:
+  Your goal is to maximize readability and flow, while keeping information concise and avoiding  unnecessary fluff. Follow these steps:
+  1. Title slides related to the purpose of the slide.
+  2. Combine related bullet points into the same slide. Bullet points can be a max of two sentences if needed.
+  3. Maintain factual accuracy and prioritize clarity while making the slide engaging and concise.
+
+  Your output should be multiple slides, read like a professional presentation, and capture the essence of the original content.
+
+  Here are your instructions for formatting the raw converted text into chart and table data:
+  The chart and table data should be placed on the SAME slide where sections/bullet points are discussing the contents of the chart and/or table. 
+
+  #*Output content and format*
+  You must respond to the request with only a JSON dictionary that has the exact form as defined in ppt_formatter_template.txt/
+  Do NOT output markdown headers within any JSON components. Do NOT input a JSON header either on line 1. Also, ensure that the content of your output exactly reproduces the inputs. The only exception to this is the FORMATTING of the markdown table according to the guidelines below. The table content itself should be the same. 
+  The only other exception is if the inputed chart data has the display of the legend set to 'False', set it to 'True'. The legend should always be displayed. Do not change the raw text nor anything else in the chart data. Only format the output as specified, properly inserting the chart and table data into the raw text. When reproducing the chart data in your output JSON dictionary, ensure it is a valid JSON string and that the JSON is well-formed and properly escaped to avoid parsing errors. The chart will be parsed like the following:
+
+  ```
+  chart_info = json.loads(section["content"])
+  ```
+
+  Please generate table data in the following format:
+
+  1. Do **not** include dashed lines (e.g., `------`) as separators between headers and rows.
+  2. Each row should start and end directly with the content, separated by vertical bars (`|`). Do **not** add extra dividers at the beginning or end of the row.
+  3. The table headers and rows should align properly, with each column separated by a single `|`.
+
+  # *Things you must keep in mind*
+  - The JSON dictionary with those elements, with NO header, should be your only response.
+  - Work step by step.
+  - Check your math.
