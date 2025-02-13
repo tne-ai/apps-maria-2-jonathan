@@ -112,16 +112,18 @@ nodes:
       id: _b0YWgh_Zne2DI_IuTSoh
       title: Section 1
       input: ''
-      slashgptManifest: ''
+      slashgptManifest: Section_1.model
       toolJson: ''
       toolCode: ''
       outputType: overwrite
       outputToCanvas: true
       useUserQuery: false
-      flowState: *ref_0
+      flowState:
+        backend: git
+        repo: apps-maria-2-jonathan
     width: 238
     height: 466
-    selected: false
+    selected: true
     positionAbsolute:
       x: 1352.7340793190267
       'y': 703.1598248049647
@@ -137,7 +139,7 @@ nodes:
       outputName: sec1_bullets.txt
     width: 238
     height: 190
-    selected: true
+    selected: false
     positionAbsolute:
       x: 1324.7340793190267
       'y': 1229.1598248049647
