@@ -153,7 +153,7 @@ nodes:
       id: baJxW5Y8Vb7s3U0X1uKW6
       title: New Model
       input: ''
-      slashgptManifest: ''
+      slashgptManifest: ie_item_generator.model
       toolJson: ''
       toolCode: ''
       outputType: overwrite
@@ -185,7 +185,7 @@ nodes:
               https://github.com/tne-ai/apps-maria-2-jonathan/blob/main/Experts/Section_1_pptconv
     width: 238
     height: 466
-    selected: false
+    selected: true
     positionAbsolute:
       x: 1693.355632008544
       'y': 705.3812021993475
