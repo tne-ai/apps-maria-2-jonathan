@@ -7,7 +7,7 @@ def ppt_maker(content, file_name):
 
     #Iterate through each section
     for section in content["sections"]:
-        title = section["title"]
+        content_title = section["title"]
         text_content = section["content"]
         content_type = section["type"]
 
@@ -17,13 +17,13 @@ def ppt_maker(content, file_name):
             slide_title = slide.shape.title
             slide_text = slide.shapes.placeholders[1]
 
-            slide_title.text = title
-            slide_text.text = content_type
+            slide_title.text = content_title
+            slide_text.text = text_content
 
     # save powerpoint
-    ppt.save("test.pptx")
+    ppt.save(file_name)
 
-with open('test.txt', 'r') as file:
+with open('ppt_test1.txt', 'r') as file:
     txt_contents = file.read()
 
 #turn it into dictionary
