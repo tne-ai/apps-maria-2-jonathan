@@ -1,4 +1,5 @@
 import json
+from io import BytesIO
 from pptx import Presentation 
 
 def ppt_maker(content, file_name):
@@ -7,18 +8,18 @@ def ppt_maker(content, file_name):
 
     #Iterate through each section
     for section in content["sections"]:
-        content_title = section["title"]
-        text_content = section["content"]
-        content_type = section["type"]
+        json_title = section["title"]
+        json_content = section["content"]
+        json_content_type = section["type"]
 
-        if content_type == "raw text":
+        if json_content_type == "raw text":
             #have text slide
             slide = ppt.slides.add_slide(ppt.slide_layouts[1])
-            slide_title = slide.shape.title
+            slide_title = slide.shapes.title
             slide_text = slide.shapes.placeholders[1]
 
-            slide_title.text = content_title
-            slide_text.text = text_content
+            slide_title.text = json_title
+            slide_text.text = json_content
 
     # save powerpoint
     ppt.save(file_name)
@@ -30,6 +31,7 @@ with open('ppt_test1.txt', 'r') as file:
 json_contents = json.loads(txt_contents)
 
 file_name = json_contents["document_filename"]
+print(file_name)
 content = json_contents
 
 #call pdf_maker method
