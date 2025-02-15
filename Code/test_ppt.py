@@ -20,6 +20,19 @@ def ppt_maker(content, file_name):
 
             slide_title.text = json_title
             slide_text.text = json_content
+            continue
+        
+        elif json_content_type == "table":
+            #have table on slide
+            continue
+
+        elif json_content_type == "chart":
+            #have chart on slide
+            continue
+        
+        else:
+            print("something is wrong")
+            continue
 
     # save powerpoint
     ppt.save(file_name)
